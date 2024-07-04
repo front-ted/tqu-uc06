@@ -1,0 +1,552 @@
+﻿@charset "utf-8";
+
+@font-face {
+    font-family: "figtree";
+    src: url("../fonts/Figtree-Regular.ttf");
+}
+@font-face {
+    font-family: "figtree-italic";
+    src: url("../fonts/Figtree-Italic.ttf");
+}
+@font-face {
+    font-family: "figtree-bold";
+    src: url("../fonts/Figtree-Bold.ttf");
+}
+
+body {
+    position: relative;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center !important;
+	background-attachment: fixed !important;
+	height: auto;
+	overflow-x: hidden;
+}
+.bg-fundo{
+	width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.6;
+    transition: all 0.8s;
+}
+.topo-logo{
+    background: url('../images/asset_circulo.svg') no-repeat left -25px center, 
+    url('../images/senac_logo.svg') no-repeat right 5% center;
+    background-size: auto, 70px;
+    height: 60px;
+}
+.bloco{
+    padding: 40px 0;
+}
+.bloco.bg-gradiente *{color: #fff;}
+h1{
+    padding: 40px 0;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-family: figtree-bold;
+    color: #fff;
+    text-align: center;
+}
+h2, h3, h4, h5{
+	margin-bottom: 50px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-family: figtree-bold;
+}
+h2{
+    margin-left: -30px;
+    font-size: 36px;
+}
+h3{
+    font-size: 23px;
+}
+h4{font-size: 18px;}
+h5{font-size: 17px;}
+p, li, th, td, a{
+    font-family: figtree;
+    font-size: 16px;
+}
+b, strong{font-family: figtree-bold;}
+i, blockquote p, blockquote, em{font-family: figtree-italic;}
+p{margin-bottom: 30px;}
+
+.container{
+    max-width: 960px;
+    position: relative;
+    padding: 0 30px;
+}
+
+/*footer*/
+.voltar-topo{
+    background: url('../../assets/bt_topo.svg');
+    width: 42px;
+    height: 42px;
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px
+}
+
+.pagination .active {
+    transform: translateY(-8px);
+    pointer-events: none;
+	margin: 0 1px;
+}
+.pagination li a:visited {color: #ccc;}
+
+
+/*classe para borda arredondada padrão*/
+.radius{border-radius: 25px;}
+
+/*classe de sombra padrão*/
+.shadow{
+    box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+}
+
+/*classe que aplica gradiente primário na div que fica por trás das imagens*/
+.borda-colorida{
+  border: 10px solid transparent;
+  border-radius: 50px;
+}
+
+/*tabela*/
+table{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    overflow: hidden;
+}
+thead th{
+    color: #fff;
+    padding: 5px 20px;
+    border-right: 5px solid #fff;
+}
+thead th:last-child{border-right: none;}
+td{
+    border-style: solid;
+    border-left-width: 5px;
+    border-bottom-width: 3px;
+    padding: 10px 20px;
+    line-height: 20px;
+}
+tbody td:first-child{border-left: 0;}
+
+/*painel gaitinha ou accordion*/
+.accordion-header{margin-top: 0;}
+.accordion-button, .accordion-button:not(.collapsed){
+    color: #fff;
+    border-radius: 30px 30px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+.accordion-item, .accordion-item:first-of-type{
+    border: none;
+    margin-bottom: 15px;
+}
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill='white' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+.accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill='white' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+.accordion-body{
+    margin-left: 20px;
+    border-left: 3px solid #1e8cb1;
+}
+
+/*slideshow - carousel*/
+/*carousel bootstrap*/
+.carousel{margin-bottom: 100px;}
+.carousel-inner{overflow: unset;}
+.carousel-indicators .carousel-control-prev, 
+.carousel-indicators .carousel-control-next, 
+.splide__arrow, .splide__arrow:disabled{
+    height: 32px;
+    width: 31px;
+    opacity: 1;
+    bottom: 0;
+    border: none;
+}
+.carousel-control-prev{
+    background: url('../images/seta_esq.svg') no-repeat;
+    left: -130px;
+}
+.carousel-control-next{
+    background: url('../images/seta_dir.svg') no-repeat;
+    right: -130px;
+}
+.carousel-indicators{
+    margin-bottom: 0;
+    bottom: -50px;
+}
+.carousel-indicators .indicador, .splide__pagination__page{
+    height: 22px;
+    width: 22px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    opacity: 1;
+    background-color: #fff;
+}
+
+/*splide carousel*/
+.container-fluid .splide .splide__slide{margin-right: 100px;}
+.splide .card-body{
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+}
+.splide .card:hover .card-body{
+    opacity: 1;
+}
+.splide .card{
+    position: relative;
+    border-radius: unset;
+    border: none;
+    background: none;
+    margin-bottom: 30px;
+    transition: all .4s;
+    opacity: .8;
+    transform: scale(.8);
+}
+.splide .is-active .card{
+    opacity: 1;
+    transform: scale(1);
+}
+.splide .card .card-body{
+    position: absolute;
+    bottom: 10px;
+    background: #fff;
+    width: calc(100% - 20px);
+    border: none;
+    left: 10px;
+    border-radius: 0 0 40px 40px;
+}
+.splide__arrows svg{display: none;}
+.splide__arrow--prev{
+    background: url('../images/seta_esq.svg') no-repeat;
+    left: calc(25% - 100px);
+}
+.splide__arrow--next{
+    background: url('../images/seta_dir.svg') no-repeat;
+    right: calc(25% - 100px);
+}
+.splide__pagination{
+    bottom: -20px;
+}
+.splide__pagination__page.is-active{transform: unset;}
+.splide__arrow{
+    top: unset;
+    transform: unset;
+}
+
+/*estilo de botão padrão*/
+.botao{
+    border-radius: 25px;
+    border-width: 3px;
+    border-style: solid;
+    background: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+.botao::before{
+    border-radius: 30px;
+}
+.botao.visitado::after{
+    background: url('../images/check.svg') no-repeat;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    content: '';
+}
+
+/*modais*/
+.modal-header{
+    border-bottom: unset;
+    border-radius: 25px 25px 0 0;
+}
+.modal-header h5{
+    margin-top: 0;
+    color: #fff;
+    padding: 5px 20px;
+}
+.modal-header .btn-close{
+    filter: invert(1);
+    opacity: 1;
+}
+.btn-close:focus{box-shadow: unset;}
+.modal-body{
+    border-width: 3px;
+    border-style: solid;
+    padding: 20px 40px;
+    border-radius: 0 0 25px 25px;
+    background: #fff;
+}
+.modal-content{
+    border: unset;
+    background: unset;
+}
+.modal-dialog-centered .modal-content::before{
+    content: '';
+    background: url('../images/asset_circulo.svg') no-repeat;
+    height: 211px;
+    width: 211px;
+    position: absolute;
+    bottom: -50px;
+    left: -60px;
+    z-index: -1;
+}
+.modal-footer{border-top: unset;}
+.modal-fullscreen .modal-body{
+    border-radius: 0;
+}
+
+/*tooltip e popover*/
+.bt-tooltip{
+    border: none;
+    border-bottom: 2px dashed;
+    background: none;
+}
+.popover-header{
+    margin-top: 0;
+    color: #fff;
+}
+
+/*painel de abas*/
+.nav-tabs{border: none;}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
+    border-width: 3px;
+    border-style: solid;
+    border-bottom: none;
+}
+.tab-content{
+    border-width: 3px;
+    border-style: solid;
+    padding: 40px;
+    border-radius: 0 25px 25px 25px;
+}
+.nav-tabs .nav-link{
+    padding: 10px 40px;
+    border-radius: 25px 25px 0 0;
+    font-weight: bold;
+    color: #fff;
+    border-width: 3px;
+    border-bottom:unset;
+    margin-bottom: -2px;
+}
+
+/*caixas de destaque*/
+.paragrafo-destaque{
+    padding: 40px;
+    font-size: 24px;
+    text-align: center;
+}
+.destaque{
+    border-radius: 25px;
+    margin: 100px 0;
+    padding: 40px;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.grafismo{position: relative;}
+.grafismo::after{
+    content: '';
+    display: block;
+    background: url('../images/asset_circulo.svg') no-repeat;
+    height: 211px;
+    width: 211px;
+    bottom: -50px;
+    right: -60px;
+    position: absolute;
+}
+.destaque p:last-child{margin-bottom: 0;}
+.destaque.gradiente p{color: #fff;}
+.destaque.icone{
+    padding-left: 70px;
+}
+.destaque.icone::before{
+    content: '';
+    display: block;    
+    height: 87px;
+    width: 86px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: -40px;
+}
+
+/*ÍCONES*/
+.destaque.icone.atencao::before,
+.destaque.icone.importante::before{background: url('../images/ico_atencao.svg') no-repeat;}
+.destaque.icone.dica::before{background: url('../images/ico_dica.svg') no-repeat;}
+.destaque.icone.refletir::before{background: url('../images/ico_refletir.svg') no-repeat;}
+.destaque.icone.pergunta::before{background: url('../images/ico_pergunta.svg') no-repeat;}
+.destaque.icone.pesquisar::before{background: url('../images/ico_pesquisar.svg') no-repeat;}
+.destaque.icone.saibamais::before{background: url('../images/ico_saibamais.svg') no-repeat;}
+.destaque.icone.observacao::before{background: url('../images/ico_observacao.svg') no-repeat;}
+.destaque.icone.relembrar::before{background: url('../images/ico_relembrar.svg') no-repeat;}
+.destaque.icone.download::before{background: url('../images/ico_download.svg') no-repeat;}
+.destaque.icone.exemplo::before{background: url('../images/ico_exemplo.svg') no-repeat;}
+.destaque.icone.atividade::before{background: url('../images/ico_atividade_desafio.svg') no-repeat;}
+.destaque.icone.visualizar::before{background: url('../images/ico_visualizar.svg') no-repeat;}
+.destaque.icone.nota::before{background: url('../images/ico_nota.svg') no-repeat;}
+.destaque.icone.conclusao::before{background: url('../images/ico_concluindo.svg') no-repeat;}
+
+/*ÍCONES NEGATIVOS*/
+.icone.negativo.atencao::before,
+.icone.negativo.importante::before{background: url('../images/ico_atencao_neg.svg') no-repeat;}
+.icone.negativo.dica::before{background: url('../images/ico_dica_neg.svg') no-repeat;}
+.icone.negativo.refletir::before{background: url('../images/ico_refletir_neg.svg') no-repeat;}
+.icone.negativo.pergunta::before{background: url('../images/ico_pergunta_neg.svg') no-repeat;}
+.icone.negativo.pesquisar::before{background: url('../images/ico_pesquisar_neg.svg') no-repeat;}
+.icone.negativo.saibamais::before{background: url('../images/ico_saibamais_neg.svg') no-repeat;}
+.icone.negativo.observacao::before{background: url('../images/ico_observacao_neg.svg') no-repeat;}
+.icone.negativo.relembrar::before{background: url('../images/ico_relembrar_neg.svg') no-repeat;}
+.icone.negativo.download::before{background: url('../images/ico_download_neg.svg') no-repeat;}
+.icone.negativo.exemplo::before{background: url('../images/ico_exemplo_neg.svg') no-repeat;}
+.icone.negativo.atividade::before{background: url('../images/ico_atividade_neg.svg') no-repeat;}
+.icone.negativo.visualizar::before{background: url('../images/ico_visualizar_neg.svg') no-repeat;}
+.icone.negativo.nota::before{background: url('../images/ico_nota_neg.svg') no-repeat;}
+.icone.negativo.conclusao::before{background: url('../images/ico_concluido_neg.svg') no-repeat;}
+
+/*box de atividade*/
+.box-atividade::before{
+    content: '';
+    display: block;
+    background: url('../images/asset_circulo.svg') no-repeat;
+    height: 211px;
+    width: 211px;
+    top: -60px;
+    left: -40px;
+    z-index: -1;
+    position: absolute;
+}
+.box-atividade::after{
+    content: '';
+    display: block;    
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: -25px;
+    margin: auto;
+    left: -10px;
+    background: url('../images/ico_atividade_desafio.svg') no-repeat;
+    background-size: contain;
+}
+.box-atividade{
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    padding: 40px;
+    margin: 80px auto;
+    position: relative;
+}
+.titulo-ativ{
+    font-family: figtree-bold;
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+/*Menu lateral - hamburguer*/
+.bt-hamburguer{
+    background: url('../images/menu_hamburguer.svg') no-repeat;
+    height: 53px;
+    width: 53px;
+    border: none;
+    position: fixed;
+    left: 0;
+    top: 150px;
+    z-index: 2;
+    transition-duration: .2s;
+}
+.offcanvas-header,.offcanvas-body{
+    padding: 0;
+}
+.offcanvas-start{width: 280px;}
+.offcanvas-title{
+    margin-top: 10px;
+    padding: 10px 15px;
+    padding-left: 50px;
+    font-size: 18px;
+    width: 100%;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+.offcanvas-header .bt-fecharmenu{
+    position: absolute;
+    background: url('../images/menu_fechar.svg') no-repeat;
+    height: 53px;
+    width: 53px;
+    right: -53px;
+    top: 150px;
+    border: none;
+}
+.offcanvas-body ul{
+    padding-left: 0;
+    margin-top: unset;
+}
+.offcanvas-body li{
+    list-style-type: none;
+    padding: 10px 15px;
+    padding-left: 50px;
+    width: 100%;
+    border-bottom: 3px solid #fff;
+}
+.offcanvas-body li:hover{
+    background: #fff;
+}
+.offcanvas-body li:hover a{color: #000;}
+.offcanvas-body li a{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    color: #fff;
+}
+.offcanvas-body li a.active{
+    background: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 1200px){
+    h2{margin-left: 0;}
+    .container-fluid .splide .splide__slide{
+        width: 80% !important;
+    }
+    .grafismo::after{
+        right: -30px;
+    }
+}
+@media screen and (max-width: 780px){
+    h1{font-size: 5vw;}
+    .topo-logo{
+        background-size: auto, 14%;
+    }
+    .destaque.icone{
+        margin-top: 90px;
+        padding-left: 40px;
+        padding-top: 80px;
+    }
+    .destaque.icone::before{
+        top: -60px;
+        bottom: unset;
+        left: 0;
+        right: 0;
+    }
+}
+@media screen and (max-width: 580px){
+    .topo-logo{
+        background-size: 47%, 14%;
+        background-position: left -155px center, right 5% center;
+    }
+}

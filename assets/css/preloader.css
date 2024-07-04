@@ -1,0 +1,36 @@
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+}
+@keyframes preloaderAnim {
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: -1410px;
+    }
+}
+.preloader .anim{
+    background-image: url(../images/senac_loader.png);
+    width: 234px;
+    height: 238px;
+    animation: preloaderAnim 800ms steps(6) infinite;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+.preloader p{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #14438F;
+    text-align: center;
+}

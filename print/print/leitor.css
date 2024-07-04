@@ -1,0 +1,679 @@
+@import url(LibreFranklin/LibreFranklin.css);
+
+.pagina p, .pagina li, .pagina a{
+  font-family: 'Libre Franklin Regular';
+}
+
+/* SUPER RESET */
+.pagina *{
+  all: unset;
+}
+.pagina *:before{
+  all: unset;
+}
+
+/* VALORES DEFAULT DE TUDO*/
+.pagina a:link	{
+  color: (internal value);
+  text-decoration: underline;
+  cursor: auto;
+}
+.pagina a:visited{
+  color: (internal value);
+  text-decoration: underline;
+  cursor: auto;
+}
+.pagina a:link:active{
+  color: (internal value);
+}
+.pagina a:visited:active{
+  color: (internal value);
+}
+.pagina b{
+  font-weight: bold;	
+}
+.pagina blockquote	{
+  display: block;	
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;	
+}
+.pagina caption	{
+  display: table-caption;
+  text-align: center;
+}	
+.pagina cite{
+  font-style: italic;
+}	
+.pagina code{
+  font-family: monospace;
+}	
+.pagina dd	{
+  display: block;
+  margin-left: 40px;	
+}
+.pagina div	{
+  display: block;
+}	
+.pagina dl	{
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}	
+.pagina dt{
+  display: block;	
+}
+.pagina em	{
+  font-style: italic;
+}	
+.pagina embed:focus	{
+  outline: none;	
+}
+.pagina figcaption	{
+  display: block;	
+}
+.pagina figure	{
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;	
+}
+.pagina footer	{
+  display: block;	
+}
+.pagina h1	{
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;	
+}
+.pagina h2	{
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;	
+}
+.pagina h3{
+  display: block;
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}	
+.pagina h4	{
+  display: block;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}	
+.pagina h5	{
+  display: block;
+  font-size: .83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}	
+.pagina h6{
+  display: block;
+  font-size: .67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;	
+}
+.pagina head{
+  display: none;	
+}
+.pagina header{
+    display: block;
+}	
+.pagina hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;	
+}
+.pagina i{
+  font-style: italic;	
+}
+.pagina iframe:focus{
+  outline: none;	
+}
+.pagina iframe[seamless]{
+  display: block;	
+}
+.pagina img	{
+  display: inline-block;
+  max-width: 60% !important;
+}
+.pagina legend{
+  display: block;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: none;	
+}
+.pagina li{
+  display: list-item;	
+}
+.pagina mark{
+  background-color: yellow;
+  color: black;
+}	
+.pagina menu{
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}	
+.pagina nav{
+  display: block;	
+}
+.pagina object:focus{
+   outline: none;
+}	
+.pagina ol{
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;	
+}
+.pagina p{
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}	
+.pagina pre{
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;	
+}
+.pagina script{
+  display: none;
+}	
+.pagina section	{
+  display: block;	
+}
+.pagina small{
+  font-size: smaller;
+}	 
+.pagina strike{
+  text-decoration: line-through;	
+}
+.pagina strong{
+  font-weight: bold;	
+}
+.pagina style{
+  display: none;
+}	
+.pagina sub	{
+  vertical-align: sub;
+  font-size: smaller;
+}
+.pagina sup	{
+  vertical-align: super;
+  font-size: smaller;	
+}
+.pagina table{
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;	
+}
+.pagina tbody{
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;	
+}
+.pagina td{
+  display: table-cell;
+  vertical-align: inherit;
+}	
+.pagina tfoot{
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;	
+}
+th{
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: center;	
+}
+.pagina thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}	
+.pagina title{
+  display: none;	
+}
+.pagina tr{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+/* Estilos de acordo com o template + ou - */
+.img-fluid{
+  max-width: 100%;
+}
+.caixa{
+  display: block;
+  max-width: 100%;
+  padding: 2rem;
+  border: 1px solid red;
+}
+.pagina h1, .pagina h2, .pagina h3, .pagina h4, .pagina h5, .pagina h6{
+  font-family: 'Libre Franklin Bold';
+}
+.pagina h1, .pagina h2, .pagina h3, .pagina h4, .pagina h5, .pagina h6{
+  margin: 1.2rem 0;
+  font-family: 'Libre Franklin Bold';
+  color: black;
+}
+.pagina *.clique{
+  display: none;
+}
+.pagina .accordion h2{
+  font-size: 1.1rem;
+}
+
+/**,
+*:before,
+*:after,
+*:first-letter,*/
+p:first-line,
+div:first-line,
+blockquote:first-line,
+li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+#booklet .paginas .pagina {
+  display: block !important;
+}
+body {
+  background-color: #f2f2f2
+}
+div#booklet {
+  margin-top: 80px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1{
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 10px;
+  font-size: 25pt;
+}
+h2 {
+  font-size: 22pt;
+}
+h3{
+  font-size: 20pt;
+}
+h4 {
+  font-size: 18pt;
+}
+h5 {
+  font-size: 16pt;
+}
+.pagina{
+    background-color: white;
+    padding: 20px 50px;
+    margin-bottom: 3rem;
+}
+#booklet h1 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+/* deixa tudo cinza */
+.pagina *{
+  filter: grayscale(1);
+}
+p{
+	font-size:12pt;
+	font-family:'robotoregular', Arial , Verdana, Helvetica;
+	margin:1.4em 0 1.4em 0;
+	line-height:1.7em;
+}
+.ico-div-loader {
+  position: absolute;
+  left: -100%;
+  width: 1px;
+  height:1px;
+  overflow: hidden;
+}
+h4{
+	margin-top:1.5em;
+	margin-bottom:2.5em;
+}
+ul,ol{
+	font-size:1.2em;
+	margin-bottom:2em;
+	margin-left:1.7em;
+}
+ul * {
+	font-size:inherit;
+}
+ol * {
+	font-size:inherit;
+}
+li{
+	margin-bottom:0.8em;
+	list-style-image:url(../images/marcador.png);
+}
+ol li{
+	list-style-image:none;
+}
+
+button, a {
+  outline:none !important
+}
+.bg-topo-print{
+    z-index: 10;
+    position: fixed;
+    top: 0px; left: 0px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: white;
+    background-color: darkgray;
+    box-shadow: 0 2px 0 2px rgba(0,0,0,.1);
+}
+
+/*----------------*/
+.carousel-indicators, .carousel-control, .btn-group, .nav-tabs, .nav-pills, .dropdown-menu, nav .pagination, nav .pager, .progress, .navbar, iframe, .embed-responsive, .modal-footer, .pagination  {
+  display: none !important;
+}
+.modal.fade {
+  display: block !important;
+  position: relative !important;
+  opacity: 1;
+}
+.modal.fade .modal-dialog {
+  width: 100% !important;
+}
+.modal.fade .modal-dialog .modal-content {
+  box-shadow: unset !important;
+  border-radius: 0px !important;
+  background: none !important;
+}
+.modal-fullscreen .modal-content{height: auto !important;}
+
+.tab-content .tab-pane, .tab-content .tab-pane ul, .tab-content > .tab-pane, .tab-content > .tab-pane.fade {
+  display: block !important;
+}
+.tab-content .tab-pane ul li{
+  display: list-item !important;
+}
+.tab-content {
+  page-break-inside: avoid !important;
+}
+.tab-content > .tab-pane.fade {
+  opacity: 1 !important;
+}
+
+.carousel-inner .item {
+  display: block !important;
+  transition: unset !important;
+  transform: unset !important;
+  position: relative !important;
+  left: 0px !important;
+  page-break-inside: avoid !important;
+  page-break-after: always !important;
+}
+.carousel .carousel-inner .carousel-item{
+  display: block !important;
+  opacity: 1 !important;
+  margin: 1.2rem;
+}
+.carousel-inner .item.active.left {
+  transform: translate3d(0,0,0) !important;
+}
+.carousel-caption {
+  position: absolute !important;
+  right: 15% !important;
+  bottom: 20px !important;
+  left: 15% !important;
+  z-index: 10 !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  color: #fff !important;
+  text-align: center !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6) !important;
+  color: #000 !important;
+  text-shadow: unset !important;
+}
+
+.splide__list{transform: none !important;}
+.splide__pagination, .splide__arrows{display: none !important;}
+.splide__list li{
+  list-style: none !important;
+  margin-bottom: 20px;
+}
+
+.parallax-window {
+  display: none !important;
+}
+
+.caixa-aling-right, .caixa-aling-left {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.close {
+  display: none !important;
+}
+
+.print, .only-print, .apenas-print, .imprimir, .apenas-imprimir {
+  display: block !important;
+}
+.no-print, .nao-imprimir {
+  display: none !important;
+}
+
+@media print{
+  .bg-topo-print{
+    display: none;
+  }
+}
+
+h1, h1.visually-hidden{
+  font-size: 24pt;    
+}
+h2, h2.visually-hidden{
+  font-size: 20pt;   
+}
+h3, h3.visually-hidden{
+  font-size: 18pt;   
+}
+h4, h4.visually-hidden{
+ font-size: 16pt;   
+}
+h5, h5.visually-hidden{
+  font-size: 14pt;    
+}
+h6, h6.visually-hidden{
+  font-size: 12pt;    
+}
+p{
+  font-size: 12pt;
+  color: black
+}
+.container{
+  max-width: unset;
+  width: 100%;
+  padding: 20px;
+}
+.icone::before{
+  display: none !important;   
+  background-color: transparent !important;
+  visibility: hidden !important;
+}
+.caixa, .caixa.icone{
+  border: 2px dashed grey;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: .5rem;
+  margin-right: .5rem;    
+}
+.visually-hidden.print{
+  position: relative!important;
+  width: auto!important;
+  height: auto!important;
+  padding: initial!important;
+  margin: initial!important;
+  overflow: visible!important;
+  clip:unset!important;
+  white-space:normal!important;
+  border: 0!important;
+}
+/*painel de abas*/
+.painel-abas .tab-content{
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  margin: 0;
+  width: 100%;
+}
+.tab-content{
+  border: 0;
+  margin: 0;
+  box-shadow: none;
+  width: 100%;
+}
+.nav.nav-tabs{
+  display: none;            
+}
+.tab-content .tab-pane{
+  box-sizing: border-box;
+  display: block;
+  padding: 1.6rem;
+  border: 2px solid;
+  page-break-inside: avoid;
+  line-height: 1.2;
+  margin: 1.2rem 0;
+  max-width: 100%;
+}
+
+/*accordion*/
+.accordion .accordion-collapse{
+  height: initial;
+  display: block;
+}
+.accordion-item{
+  page-break-inside: avoid;
+}
+
+/*carousel*/
+.carousel{
+  margin:0;
+  padding: 0;
+}
+.carousel .carousel-inner{
+  overflow: initial;
+  padding: 0;
+  margin: 0;
+}
+.carousel .carousel-inner .carousel-item{
+  display: block;
+  margin: 1.2rem;
+}
+.carousel .carousel-indicators,
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next{
+  display: none;
+}
+
+/*youtube*/
+iframe, iframe.youtube-pl{
+  display: none;
+}
+
+/*vamos praticar*/
+.caixa.icone.praticar{
+  padding: none;
+  margin: 0;
+}
+.esquemaDaBru{
+  page-break-inside:auto;
+  page-break-after:auto;
+  page-break-before:auto;
+}
+.esquemaDaBru .enunciado{
+  font-weight: bold;
+}
+.esquemaDaBru .btn-sesc{
+  border: 0;
+  box-shadow: none;
+  page-break-inside:auto;
+  page-break-after:auto;
+  page-break-before:auto;
+  text-align: left;
+  background-color: white;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.esquemaDaBru .feedbacks{
+  display: none;
+}
+.clique{
+  display: none;
+}
+
+/*modais no leitor*/
+.modal{
+  z-index: 1;
+}
+.modal.fade{
+  opacity: 1;
+  height: auto !important;
+  min-height: auto !important;
+  display: block !important;
+}
+.modal-dialog, .modal-dialog.modal-dialog-centered {
+  display: block !important;
+  align-items: unset !important;
+  min-height: auto !important;
+  transform: none !important;
+  margin-bottom: 2rem;
+}
+.modal-header button{
+  display: none;
+}

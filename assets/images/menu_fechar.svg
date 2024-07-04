@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #0b3b4b;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 4;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g id="Grupo_421" data-name="Grupo 421">
+      <path id="Retângulo_269" data-name="Retângulo 269" class="cls-1" d="m0,0h40c5.52,0,10,4.48,10,10v30c0,5.52-4.48,10-10,10H0V0h0Z"/>
+      <path id="Caminho_417" data-name="Caminho 417" class="cls-2" d="m13.43,36.57l23.14-23.14"/>
+      <path id="Caminho_418" data-name="Caminho 418" class="cls-2" d="m36.57,36.57L13.43,13.43"/>
+    </g>
+  </g>
+</svg>

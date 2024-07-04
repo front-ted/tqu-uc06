@@ -1,0 +1,102 @@
+/*Esquema da Bru*/
+.esquemaDaBru .alt-c, .esquemaDaBru .alt-e{
+    padding: 5px 10px;
+    text-align: left;
+    width: 92%;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: #fff;
+    transition: all .4s;
+    overflow: visible;
+}
+
+.esquemaDaBru button.alt-c.selected{
+    background-color: #4ba69d;
+    border-color: #4ba69d;    
+    color: #fff; 
+}
+.esquemaDaBru button.alt-e.selected{
+    background-color: #dedede;  
+    border-color: #808080; 
+    color: #808080;
+}
+
+.enunciado{margin-top: 30px;}
+.multipla-escolha {
+    counter-reset: button;
+}
+.multipla-escolha button{
+    position: relative;
+    color: #000;
+    font-weight: unset;
+    min-height: 50px;
+    padding: 10px 20px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+}
+.multipla-escolha button:hover{
+    transform: scale(1.03);
+    box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
+}
+.multipla-escolha button::before{
+    counter-increment: button;
+    content: counter(button, upper-alpha) ")";
+    display: block;    
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: -80px;
+    border-radius: 10px;
+    text-transform: lowercase;
+}
+
+.verdadeiro-falso{
+    margin: 40px auto;
+}
+.verdadeiro-falso button.alt-c, .verdadeiro-falso button.alt-e{
+    max-width: 230px;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .4s;
+}
+.verdadeiro-falso button.alt-c.selected{
+    background-color: #4ba69d;
+    border-color: #4ba69d;    
+    color: #fff;
+}
+.verdadeiro-falso button.alt-e.selected{
+    background-color: #dedede;  
+    border-color: #808080; 
+    color: #808080;
+}
+
+.f-positivo, .f-negativo{
+    color: #000;
+    font-weight: unset;
+    padding: 10px 20px;
+    margin: 30px 0;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+}
+.f-positivo i, .f-negativo i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.f-positivo i{color: #28afb2;}
+.f-negativo i{color: #cd6667;}

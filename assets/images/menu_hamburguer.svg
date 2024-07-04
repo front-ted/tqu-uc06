@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        fill: url(#Gradiente_sem_nome_42);
+      }
+    </style>
+    <linearGradient id="Gradiente_sem_nome_42" data-name="Gradiente sem nome 42" x1="-770.36" y1="6835.86" x2="-769.11" y2="6836.45" gradientTransform="translate(38500.31 341836.33) scale(50 -50)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b3b4b"/>
+      <stop offset="1" stop-color="#0b3b4b"/>
+    </linearGradient>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g id="Grupo_422" data-name="Grupo 422">
+      <path id="Retângulo_269" data-name="Retângulo 269" class="cls-2" d="m0,0h40c5.52,0,10,4.48,10,10v30c0,5.52-4.48,10-10,10H0V0h0Z"/>
+      <path id="Caminho_417" data-name="Caminho 417" class="cls-1" d="m11.07,12.98h27.87"/>
+      <line id="Linha_532" data-name="Linha 532" class="cls-1" x1="11.07" y1="23.73" x2="38.93" y2="23.73"/>
+      <line id="Linha_533" data-name="Linha 533" class="cls-1" x1="11.07" y1="34.49" x2="38.93" y2="34.49"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+@charset "utf-8";
+/*
+	Variáveis em cascata para facilitar a mudança de cores de um curso para o outro.
+*/
+:root{
+	--bg-gradiente-primario: rgb(11,58,74);
+	--gradiente-primario: linear-gradient(30deg, rgba(11,58,74,1) 10%, rgba(50,176,175,1) 50%, rgba(252,208,109,1) 92%);
+
+	--gradiente-borda: linear-gradient(#fff, #fff) padding-box,
+	linear-gradient(80deg, rgba(11,58,74,1) 10%, rgba(50,176,175,1) 50%, rgba(252,208,109,1) 92%) border-box;
+
+	--bg-gradiente-secundario: rgb(80,215,226);
+	--gradiente-secundario: linear-gradient(60deg, rgba(80,215,226,1) 0%, rgba(46,137,151,1) 18%, rgba(11,59,75,1) 100%);
+
+	--cor-primaria: #92ACCE;
+	--cor-secundaria: #CF9993;
+
+	--gradiente-fundo: #1A4480;
+	--gradiente-bg: radial-gradient(farthest-corner at 5% 5%, #1A4480 0%, transparent 60%), 
+	radial-gradient(farthest-corner at 100% 100%, #CF9993 0%, transparent 60%),
+	radial-gradient(farthest-corner at 0% 100%, #fff 0%, transparent 50%);
+}
+/*layout com fundo gradiente*/
+.bg-gradiente{
+	background-color: var(--gradiente-fundo);
+	background-image: var(--gradiente-bg);
+}
+.bg-gradiente .pagina > *{
+	color: #fff;
+}
+
+/*elementos que levam gradiente primário - três cores*/
+#topo, .prognroll-bar{
+	background: var(--bg-gradiente-primario);
+	background: var(--gradiente-primario);
+}
+.borda-colorida{
+	background: var(--gradiente-borda);
+}
+
+/*elementos que levam gradiente secundário - duas cores*/
+.modal-header, .destaque.gradiente, 
+.multipla-escolha button::before, .game-titulo, .offcanvas,
+.audio-player input[type=range]::-webkit-slider-thumb,
+.audio-player input[type=range]::-webkit-slider-runnable-track,
+.audio-player input[type=range]:focus::-webkit-slider-runnable-track{
+	background: var(--bg-gradiente-secundario);
+	background: var(--gradiente-secundario);
+}
+.audio-player input[type=range]::-moz-range-track,
+.audio-player input[type=range]::-moz-range-thumb {
+	background: var(--bg-gradiente-secundario);
+	background: var(--gradiente-secundario);
+}
+
+/*elementos que levam a cor primária*/
+.carousel-indicators .indicador, .splide__pagination__page, .modal-body, 
+.popover, .tab-content, .multipla-escolha button,
+.f-positivo, .f-negativo, .game-body .slot, .resp, .bg-podcast{
+	border-color: var(--cor-primaria);
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
+	border-top-color: var(--cor-primaria);
+	border-left-color: var(--cor-primaria);
+	border-right-color: var(--cor-primaria);
+}
+.carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active,
+.game-associar-colunas button.item {
+	border-color: var(--cor-primaria);
+	background: var(--cor-primaria);
+}
+.botao, .game-body .card, .game-associar-colunas button.item:hover::before, 
+.game-associar-colunas button.selecionado, .game-associar-colunas button.selecionado::before,
+.txtacao{
+	border-color: var(--cor-primaria);
+	color: var(--cor-primaria);
+}
+.hvr-sweep-to-right:before, .popover-header, .nav-tabs .nav-link,
+thead, .accordion-button, .accordion-button:not(.collapsed){
+	background-color: var(--cor-primaria);
+}
+
+/*elementos que levam a cor secundária*/
+mark{background: var(--cor-secundaria);}

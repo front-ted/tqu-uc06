@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="../assets/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/preloader.css" rel="stylesheet">
+    <link href="../assets/fa/css/all.min.css" type="text/css" rel="stylesheet">
+    <link href="../assets/css/cores.css" type="text/css" media="all" rel="stylesheet">
+    <link href="print/leitor.css" type="text/css" media="all" rel="stylesheet">
+    <link href="print/print.css" type="text/css" rel="stylesheet">
+    <title>Versão para impressão</title>
+</head>
+    <body>
+        <div class="preloader">
+            <div class="anim"></div>
+            <p>Aguarde enquanto o conteúdo é carregado.</p>
+        </div>
+        <div class="bg-topo-print text-center">
+            <button class="btn btn-info" onclick="window.close()">Cancelar</button><span class="text-white" style="margin-left: 10px; margin-right: 10px;">|</span>
+            <button type="button" onclick="javascript:print()" class="btn btn-primary">
+            <span class="fa fa-print"></span> Imprimir</button>
+            <span class="d-none d-lg-inline-block"><span style="margin-left: 10px; margin-right: 10px;">|</span> <span class="fa fa-font" style="margin-right: 10px;"></span>
+            <button class="btn btn-primary active" onclick="fontSize(0)">Padrão</button>
+            <button class="btn btn-primary" onclick="fontSize(1)">Médio</button>
+            <button class="btn btn-primary" onclick="fontSize(2)">Grande</button></span>
+        </div>
+
+        <img src="../assets/images/logo_senac_colorido.png" id="marcadaguaLogo">
+
+        <div id="booklet" class="visualizar-print">
+            <h1><span id="nomeCurso"></span></h1>
+            <div id="ajaxPages"></div>
+        </div>
+
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="print.js"></script>
+    </body>
+</html>

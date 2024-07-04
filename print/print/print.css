@@ -1,0 +1,297 @@
+@import url(LibreFranklin/LibreFranklin.css);
+
+#marcadaguaLogo { display: none !important; }
+
+.bt-print{
+  background: url('../images/impressao.svg') no-repeat;
+  width: 68px;
+  height: 62px;
+  border: none;
+  transition: all .5s;
+}
+.bt-print:hover{
+  transform: scale(1.1);
+}
+
+.only-print, .apenas-print, .apenas-imprimir {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-right: 1cm;
+    margin-left: 2cm;
+  }
+
+  html, body {
+    height: 100%;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+      
+  header{
+    display: none !important;
+  }
+  img, .equacoes, figure, .print-proteger {
+    page-break-inside: avoid !important;
+    max-width: 500px !important;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  a[data-toggle='collapse']:after {
+    content: "";
+  }
+    
+  #marcadaguaLogo {
+    display: block !important;
+    position: fixed;
+    top: 1cm;
+    left: 0px;
+    width: auto;
+    height:auto;
+    opacity: 0.07;
+    z-index: 1;
+  }
+
+  .pagina, .container{
+    padding: 0 !important;
+    margin: 0 !important;
+    page-break-before: unset !important;
+    width: 100% !important;
+  }
+  
+  
+  h1, h1.visually-hidden{
+    font-size: 24pt;    
+  }
+  h2, h2.visually-hidden{
+    font-size: 20pt;
+  }
+  h3, h3.visually-hidden{
+    font-size: 18pt;   
+  }
+  h4, h4.visually-hidden{
+    font-size: 16pt;   
+  }
+  h5, h5.visually-hidden{
+    font-size: 14pt;    
+  }
+  h6, h6.visually-hidden{
+    font-size: 12pt;    
+  }
+  *{
+    font-family: 'Libre Franklin Regular' !important
+  }
+  h1,h2,h3,h4,h5,h6{
+    margin: 1rem 0;
+    font-family: 'Libre Franklin Bold';
+    color: black;
+  }
+  p{
+    font-size: 12pt;
+    color: black
+  };
+  .icone::before{
+    display: none !important;   
+    background-color: transparent !important;
+    visibility: hidden !important;
+  }
+  .caixa, .caixa.icone{
+    border: 2px dashed grey;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;    
+  }
+  .visually-hidden.print{
+    position: relative!important;
+    width: auto!important;
+    height: auto!important;
+    padding: initial!important;
+    margin: initial!important;
+    overflow: visible!important;
+    clip:unset!important;
+    white-space:normal!important;
+    border: 0!important;
+  }
+
+  /*paindel de abas*/
+  .painel-abas .tab-content{
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+  }
+  .tab-content{
+    border: 0;
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+  .nav.nav-tabs{
+    display: none;            
+  }
+  .tab-content .tab-pane{
+    display: block;
+    padding: 1.6rem;
+    border: 2px solid;
+    page-break-inside: avoid;
+    line-height: 1.2;
+    margin: 1.2rem 0;
+    width: 100%;
+  }
+
+  /*accordion*/
+  .accordion .accordion-collapse{
+    height: initial;
+    display: block;
+  }
+  .accordion-item{
+    page-break-inside: avoid;
+  }
+
+  /*carousel*/
+  .carousel{
+    margin:0;
+    padding: 0;
+  }
+  .carousel .carousel-inner{
+    overflow: initial;
+    padding: 0;
+    margin: 0;
+  }
+  .carousel .carousel-inner .carousel-item{
+    display: block !important;
+    opacity: 1 !important;
+    margin: 1.2rem;
+  }
+  .carousel .carousel-indicators,
+  .carousel .carousel-control-prev,
+  .carousel .carousel-control-next{
+    display: none;
+  }
+
+  /*vídeos*/
+  iframe, iframe.youtube-pl{
+    display: none;
+  }
+
+  /*vamos praticar*/
+  .caixa.icone.praticar{
+    padding: none;
+    margin: 0;
+  }
+  .esquemaDaBru{
+    page-break-inside:auto;
+    page-break-after:auto;
+    page-break-before:auto;
+  }
+  .esquemaDaBru .btn-sesc{
+    border: 0;
+    box-shadow: none;
+    page-break-inside:auto;
+    page-break-after:auto;
+    page-break-before:auto;
+  }
+  .esquemaDaBru .feedbacks{
+    display: none;
+  }
+  .clique{
+    display: none;
+  }
+  .modal, .modal.fade{
+    display: block;
+    position: relative;
+    left: initial;
+    top: initial;
+    overflow-x: visible;
+    overflow-y: visible;
+    opacity: 1;
+  }
+  .modal-dialog{
+    transform: none;
+    transition: none;
+    width: auto;
+    margin: 0;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+  }
+  .modal-dialog .modal-header .btn-close{
+    display: none;
+  }
+  .modal-dialog  .modal-footer button{
+    display: none;
+  }
+  .modal-dialog.modal-fullscreen{
+    padding: 0;
+    margin-top: 2rem;  
+    transform: none;
+  }
+  .modal-dialog.modal-fullscreen .container{
+    max-width: initial !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: white !important;
+  }
+
+  /* SUMIR COM TUDO QUE NÃO ESTEJA NA DIV booklet */
+  body > *:not(#booklet) {
+    display: none;
+  }
+  /* FIM-/SUMIR COM TUDO QUE NÃO ESTEJA NA DIV booklet */
+
+  /* TAGS .print e .no-print */
+  .no-print, .nao-imprimir{
+    display: none;
+  }
+  .print, .imprimir{
+    display: initial !important;
+  }
+  .print, .only-print, .apenas-print, .imprimir, .apenas-imprimir {
+    display: block !important;
+  }
+  .acessivel.print, .acessivel.imprimir {
+    width: unset;
+    height: unset;
+    padding: unset;
+    margin: unset;
+    border: unset;
+    font-size: unset;
+    overflow: unset;
+  }
+  .no-print, .nao-imprimir {
+    display: none !important;
+  }
+  .quebrar-depois, .break-after {
+    page-break-after: always;
+  }
+  .quebrar-antes, .break-before {
+    page-break-before: always;
+  }
+  .evitar-quebra, .break-inside-avoid {
+    page-break-inside: avoid;
+  }
+
+  .splide__pagination{display: none !important;}
+  .splide__list li{list-style: none !important;}
+}
