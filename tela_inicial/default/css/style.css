@@ -595,6 +595,12 @@ ul {
 
 .voltar-topo{
   margin-top: 20px;
+
+}
+
+.seta-topo{
+  width: 50px;
+  height: 50px;
 }
 
 .mover-fazer{

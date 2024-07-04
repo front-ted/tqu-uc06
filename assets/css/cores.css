@@ -10,7 +10,8 @@
 	linear-gradient(80deg, #1A4480 10%, #92ACCE 50%, #CF9993 92%) border-box;
 
 	--bg-gradiente-secundario: #92ACCE;
-	--gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%);
+	/* --gradiente-secundario: linear-gradient(60deg, #92ACCE 0%, #CF9993 18%, #1A4480 100%); */
+	--gradiente-secundario: linear-gradient(120deg, #1A4480 0%, #92ACCE 100%);
 
 	--cor-primaria: #92ACCE;
 	--cor-secundaria: #CF9993;
@@ -40,10 +41,11 @@
 .borda-colorida, .destaque.borda-colorida{
 	background: var(--gradiente-borda);
 	color: #000;
+	filter: drop-shadow(rgba(82, 82, 82, 0.3) 7px 7px 5px); /* Definindo a opacidade apenas na sombra */
 }
 
 /*elementos que levam gradiente secundário - duas cores*/
-.modal-header, .destaque.gradiente, 
+.destaque.gradiente, 
 .multipla-escolha button::before, .game-titulo, .offcanvas,
 .audio-player input[type=range]::-webkit-slider-thumb,
 .audio-player input[type=range]::-webkit-slider-runnable-track,
@@ -56,11 +58,16 @@
 	background: var(--bg-gradiente-secundario);
 	background: var(--gradiente-secundario);
 }
+.modal-header{
+	background: var(--bg-gradiente-primario);
+	background: var(--gradiente-primario);
+}
+
 
 /*elementos que levam a cor primária*/
-.carousel-indicators .indicador, .splide__pagination__page, .modal-body, 
+.carousel-indicators .indicador, .splide__pagination__page, .modal-body,
 .popover, .tab-content, .multipla-escolha button,
-.f-positivo, .f-negativo, .game-body .slot, .resp, .bg-podcast{
+.f-positivo, .f-negativo, .game-body .slot, .resp, .bg-podcast, .table-border{
 	border-color: var(--cor-primaria);
 }
 .nav-tabs .nav-link.active, .nav-tabs .nav-link:hover{
@@ -69,16 +76,22 @@
 	border-right-color: var(--cor-primaria);
 }
 .carousel-indicators [data-bs-target].active, .splide__pagination__page.is-active,
-.game-associar-colunas button.item {
+.game-associar-colunas button.item, .table-header {
 	border-color: var(--cor-primaria);
 	background: var(--cor-primaria);
 }
-.botao, .game-body .card, .game-associar-colunas button.item:hover::before, 
+/* .botao, */ 
+.game-body .card, .game-associar-colunas button.item:hover::before,  
 .game-associar-colunas button.selecionado, .game-associar-colunas button.selecionado::before,
 .txtacao{
 	border-color: var(--cor-primaria);
 	color: var(--cor-primaria);
 }
+
+.botao{
+	border-color: var(--cor-primaria);
+}
+
 .hvr-sweep-to-right:before, .popover-header, .nav-tabs .nav-link,
 thead, .accordion-button, .accordion-button:not(.collapsed){background-color: var(--cor-primaria);}
 

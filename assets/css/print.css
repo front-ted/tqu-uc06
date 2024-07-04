@@ -294,4 +294,32 @@
 
   .splide__pagination{display: none !important;}
   .splide__list li{list-style: none !important;}
+  /*tabela*/
+table {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+thead th {
+  color: #fff;
+  padding: 5px 20px;
+  border-right: 5px solid #fff;
+}
+
+thead th:last-child {
+  border-right: none;
+}
+
+td {
+  border-style: solid;
+  border-left-width: 5px;
+  border-bottom-width: 3px;
+  padding: 10px 20px;
+  line-height: 20px;
+}
+
+tbody td:first-child {
+  border-left: 0;
+}
 }

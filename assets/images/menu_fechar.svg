@@ -2,8 +2,8 @@
 <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
   <defs>
     <style>
-      .cls-1, .cls-2 {
-        fill: #0b3b4b;
+      .cls-1 {
+        fill: #004789; /* Alterando a cor do preenchimento */
       }
 
       .cls-2 {

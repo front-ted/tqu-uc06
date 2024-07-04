@@ -14,6 +14,7 @@ window.addEventListener('load', function(){
     $('.botao').click(function(){
       $(this).addClass('visitado');
     });
+    
 })
 
 // reposicionamento do botao do menu
@@ -24,11 +25,29 @@ $(window).scroll(function () {
 
   // if user scrolls down..
   if (topPos > 100) {
+    $('body').removeClass("top60");
+    $('body').addClass("top00");
     $('.bt-hamburguer').css("top", "20px");
     $('.bt-fecharmenu').css("top", "20px");
   } else {
+    $('body').removeClass("top00");
+    $('body').addClass("top60");
     $('.bt-hamburguer').css("top", "150px");      
     $('.bt-fecharmenu').css("top", "150px");      
   }
 
 }); // scroll END
+
+
+var isDarkMode = true; // Controla o modo atual (escuro/claro)
+
+function toggleBackgroundImage() {
+    var button = document.getElementById('toggleButton');
+    isDarkMode = !isDarkMode; // Alternar entre escuro e claro
+
+    if (isDarkMode) {
+        button.style.backgroundImage = "url('../assets/images/modo_escuro.svg')";
+    } else {
+        button.style.backgroundImage = "url('../assets/images/modo_claro.svg')";
+    }
+}

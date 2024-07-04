@@ -164,7 +164,7 @@
 }
 .pagina img	{
   display: inline-block;
-  max-width: 60% !important;
+  max-width: 60%;
 }
 .pagina legend{
   display: block;
@@ -247,6 +247,8 @@
   border-collapse: separate;
   border-spacing: 2px;
   border-color: gray;	
+  margin: auto;
+
 }
 .pagina tbody{
   display: table-row-group;
@@ -256,6 +258,7 @@
 .pagina td{
   display: table-cell;
   vertical-align: inherit;
+  padding: 6px; 
 }	
 .pagina tfoot{
   display: table-footer-group;
@@ -296,7 +299,7 @@ th{
   font-family: 'Libre Franklin Bold';
 }
 .pagina h1, .pagina h2, .pagina h3, .pagina h4, .pagina h5, .pagina h6{
-  margin: 1.2rem 0;
+  margin: 1.2rem 0.5rem;
   font-family: 'Libre Franklin Bold';
   color: black;
 }
@@ -417,6 +420,23 @@ button, a {
     box-shadow: 0 2px 0 2px rgba(0,0,0,.1);
 }
 
+.grafico-pareto{
+  max-width: 90% !important;
+}
+.img-fluxograma{
+  max-width: 70% !important;
+  align-items: center !important;
+}
+
+.img-diagrama1{
+  max-width: 100% !important;
+}
+.img-fluxograma2{
+  max-width: 90% !important;
+}
+.container.referencias p{
+  word-wrap: break-word;
+}
 /*----------------*/
 .carousel-indicators, .carousel-control, .btn-group, .nav-tabs, .nav-pills, .dropdown-menu, nav .pagination, nav .pager, .progress, .navbar, iframe, .embed-responsive, .modal-footer, .pagination  {
   display: none !important;
@@ -677,3 +697,7 @@ iframe, iframe.youtube-pl{
 .modal-header button{
   display: none;
 }
+
+/* adicionais */
+.borda-colorida, .destaque.borda-colorida{ filter: none;}
+.destaque.gradiente{ background: none;}

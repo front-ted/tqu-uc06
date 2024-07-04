@@ -10,7 +10,7 @@
       }
 
       .cls-2 {
-        fill: url(#Gradiente_sem_nome_42);
+        fill: #004789;
       }
     </style>
     <linearGradient id="Gradiente_sem_nome_42" data-name="Gradiente sem nome 42" x1="-770.36" y1="6835.86" x2="-769.11" y2="6836.45" gradientTransform="translate(38500.31 341836.33) scale(50 -50)" gradientUnits="userSpaceOnUse">

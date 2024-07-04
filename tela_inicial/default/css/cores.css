@@ -80,5 +80,6 @@ thead, .accordion-button, .accordion-button:not(.collapsed){
 	background-color: var(--cor-primaria);
 }
 
+
 /*elementos que levam a cor secundária*/
 mark{background: var(--cor-secundaria);}

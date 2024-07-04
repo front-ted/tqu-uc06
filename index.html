@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html
-  lang="pt-br"
-  xmlns:mso="urn:schemas-microsoft-com:office:office"
-  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
->
-  <head>
-    <meta charset="UTF-8" />
-    <title>Técnico em Qualidade</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="tela_inicial/default/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="tela_inicial/default/css/cores.css" />
-    <link rel="stylesheet" href="tela_inicial/default/css/style.css" />
-    <script language="javascript">
-	
-      var uc = "TQU" // aqui vai a sigla do curso e o numero da uc
-    </script>
-    <!--[if gte mso 9
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Técnico em Qualidade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="tela_inicial/default/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="tela_inicial/default/css/cores.css" />
+  <link rel="stylesheet" href="tela_inicial/default/css/style.css" />
+  <link rel="stylesheet" href="./print/print/print.css" />
+
+  <script language="javascript">
+
+    var uc = "TQUUC1" // aqui vai a sigla do curso e o numero da uc
+  </script>
+  <!--[if gte mso 9
       ]><xml>
         <mso:CustomDocumentProperties>
           <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor
@@ -35,43 +35,42 @@
         </mso:CustomDocumentProperties>
       </xml><!
     [endif]-->
-  </head>
+</head>
 
-  <body class="bg-gradiente">
-    <div class="circulo-1"></div>
-    <div class="circulo-2"></div>
+<body class="bg-gradiente">
+  <div class="circulo-1"></div>
 
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-lg-2 pull-right text-right">
-            <img
-              src="tela_inicial/assets/logo_senac_2.png"
-              class="img-responsive"
-            />
-          </div>
-          <div class="col-xs-12 col-lg-10">
-            <h1>Técnico em Qualidade</h1>
-            <h2>Título da UC</h2>
 
-          </div>
-          <div class="col-xs-12">
-            <p class="border">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-2 pull-right text-right">
+          <img src="tela_inicial/assets/logo_senac_2.png" class="img-responsive" />
+        </div>
+        <div class="col-xs-12 col-lg-10">
+          <h1>Técnico em Qualidade</h1>
+          <h2>Utilizar metodologias e ferramentas da qualidade nas organizações</h2>
+        </div>
+        <div class="col-xs-12">
+          <!-- <p class="border">
               <strong>Importante</strong>: a organização, elaborada em semanas,
               da tela a seguir é uma sugestão de estudo. Para datas, você deverá
               considerar o cronograma disponível na sala da sua unidade
               curricular (UC).
-            </p>
-            <h4>
-              <div class="row">
-                <div class="col-md-8"><strong>Clique</strong> ou <strong>toque</strong> para acessar os conteúdos.</div>
-                <div class="col-md-4">
-                  <!--Botao com dropdown para selecionar os topicos do modulo para impressão-->
-                  <div class="dropdown">
-                    <button class="btMenuPrint dropdown-toggle" type="button" id="dropdownMenuPrint" data-bs-toggle="dropdown" aria-expanded="false">Imprimir os conteúdos</button>
-                    <ul class="dropdown-menu menuPrint" aria-labelledby="dropdownMenuPrint">
-                      <li><h6 class="dropdown-header">Semana 1</h6></li>
-                      <!--
+            </p> -->
+          <h4>
+            <div class="row" style="margin-top: 20px;">
+              <div class="col-md-8"><strong>Clique</strong> ou <strong>toque</strong> para acessar os conteúdos.</div>
+              <div class="col-md-4">
+                <!--Botao com dropdown para selecionar os topicos do modulo para impressão-->
+                <div class="dropdown">
+                  <button class="btMenuPrint dropdown-toggle" type="button" id="dropdownMenuPrint"
+                    data-bs-toggle="dropdown" aria-expanded="false">Imprimir os conteúdos</button>
+                  <ul class="dropdown-menu menuPrint" aria-labelledby="dropdownMenuPrint">
+                    <li>
+                      <h6 class="dropdown-header">Semana 1</h6>
+                    </li>
+                    <!--
                           Para imagens linkadas em um tópico onde estas estiverem em um diretorio diferente do padrão configurado no print2.js, devemos informar em qual pasta em que estão
                           as imagens(a pasta dentro do diretorio do topico, a partir da raiz do mesmo) utilizando a atributo data-imgpath="<nome da pasta>" no botão ou link que irá fazer
                           a chamada para o print. conforme o exemplo abaixo
@@ -81,33 +80,47 @@
                           que deve ser aberto no print, por exemplo:
                           <a class="dropdown-item imprimir" href="#" data-conteudo="01_recursos_basicos" data-imgpath="img" data-startpoint="teste.html">Recursos básicos</a>
                       -->
-                      <li><a class="dropdown-item imprimir" href="#" data-conteudo="01_recursos_basicos">Recursos básicos</a></li>
-                      <li><a class="dropdown-item imprimir" href="#" data-conteudo="02_atividades">Atividades</a></li>
-                      <li><a class="dropdown-item imprimir" href="#" data-conteudo="03_menu_lateral">Menu lateral ancorado</a></li>
-                      <li><a class="dropdown-item imprimir" href="#" data-conteudo="04_blocado">Template blocado</a></li>
-                      <li><a class="dropdown-item imprimir" href="#" data-conteudo="05_fundo_escuro">Template com background</a></li>
-                      <!-- <li role="separator" class="divider"></li>
-                      <li><h6 class="dropdown-header">Semana 2</h6></li>
-                      <li><a class="dropdown-item" href="#">...</a></li> -->
-                      <li role="separator" class="divider"></li>
-                      <li><a class="dropdown-item imprimir" href="#" data-conteudo="referencias">Referências</a></li>
-                    </ul>
-                  </div> 
+                    <li><a class="dropdown-item imprimir" href="#" data-conteudo="01_eras_qualidade">Eras da qualidade
+                      </a></li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                      <h6 class="dropdown-header">Semana 2</h6>
+                    </li>
+                    <li><a class="dropdown-item imprimir" href="#" data-conteudo="02_contexto_organizacao">Contexto da
+                        organização </a></li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                      <h6 class="dropdown-header">Semana 3</h6>
+                    </li>
+                    <li><a class="dropdown-item imprimir" href="#"
+                        data-conteudo="03_principios_gestao_qualidade">Princípios da gestão da qualidade</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li>
+                      <h6 class="dropdown-header">Semanas 4 e 5</h6>
+                    </li>
+                    <li><a class="dropdown-item imprimir" href="#" data-conteudo="04_ferramentas_qualidade">Ferramentas
+                        da qualidade</a></li>
+                    <li><a class="dropdown-item imprimir" href="#" data-conteudo="05_metodologia_gestao">Metodologias de
+                        gestão </a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a class="dropdown-item imprimir" href="#" data-conteudo="06_referencias">Referências</a></li>
+                  </ul>
                 </div>
               </div>
-            </h4>
-          </div>
+            </div>
+          </h4>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div class="container grupos">
-      <!-- 
+  <div class="container grupos">
+    <!-- 
 			Uma div grupo contém os links de conteúdos de uma semana na UC, caso o curso
 		tenha mais semanas, basta criar uma nova estrutura de grupo colocando um novo id (grupo6, por exemplo), se tiver menos semanas, basta excluir os grupos excedentes 
 	     -->
-
-      <!-- grupo 1 -->
+    <!-- grupo 1 -->
+    <div>
       <div class="row">
         <div class="col-lg-12">
           <h2>1ª Semana</h2>
@@ -115,9 +128,9 @@
       </div>
 
       <div class="row grupo" data-group="grupo1">
-        <h3 class="hidden-lg hidden-md">A Fazer</h3>
+        <h3 class="hidden-lg hidden-md">A fazer</h3>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
-          <h3 class="visible-lg visible-md">A Fazer</h3>
+          <h3 class="visible-lg visible-md">A fazer</h3>
 
           <ul class="drag-inner-list" id="1" data-index="lista-fazer">
             <!--
@@ -125,55 +138,12 @@
 					    dentro de uma ul, sempre posicionados na lista-fazer inicialmente
 				     -->
             <li class="drag-item fazer" data-item="link1" data-bs-toggle="tooltip" data-placement="top">
-              <a href="01_recursos_basicos/index.html" target="_blank" class="link">Recursos básicos</a>
-              <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="01_recursos_basicos">Imprimir</button>
+              <a href="01_eras_qualidade/index.html" target="_blank" class="link1"> Eras da qualidade</a>
+              <button class="btPrint imprimir" title="Imprimir o conteúdo"
+                data-conteudo="01_eras_qualidade">Imprimir</button>
               <div class="dropdown dropdown-bubble">
-                <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dLabel">
-                  Mover para:
-                  <li class="mover-fazer">A fazer</li>
-                  <li class="mover-fazendo">Sendo feito</li>
-                  <li class="mover-feito">Feito</li>
-                </ul>
-              </div>
-            </li>
-            <li class="drag-item fazer" data-item="link2" data-bs-toggle="tooltip" data-placement="top">
-              <a href="02_atividades/index.html" target="_blank" class="link">Atividades</a>
-              <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="02_atividades">Imprimir</button>
-              <div class="dropdown dropdown-bubble">
-                <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dLabel">                 
-                  Mover para:
-                  <li class="mover-fazer">A fazer</li>
-                  <li class="mover-fazendo">Sendo feito</li>
-                  <li class="mover-feito">Feito</li>
-                </ul>
-              </div>
-            </li>
-            <li class="drag-item fazer" data-item="link3" data-bs-toggle="tooltip" data-placement="top">
-              <a href="03_menu_lateral/index.html" target="_blank" class="link">Menu lateral ancorado</a>
-              <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="03_menu_lateral">Imprimir</button>
-              <div class="dropdown dropdown-bubble">
-                <a id="dLabel" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-display="static" aria-expanded="false">
-                  <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dLabel">
-                  Mover para:
-                  <li class="mover-fazer">A fazer</li>
-                  <li class="mover-fazendo">Sendo feito</li>
-                  <li class="mover-feito">Feito</li>
-                </ul>
-              </div>
-            </li>
-            <li class="drag-item fazer" data-item="link4" data-bs-toggle="tooltip" data-placement="top">
-              <a href="05_fundo_escuro/index.html" target="_blank" class="link">Template com background</a>
-              <button class="btPrint imprimir" title="Imprimir o conteúdo" data-conteudo="05_fundo_escuro">Imprimir</button>
-              <div class="dropdown dropdown-bubble">
-                <a id="dLabel" data-bs-toggle="dropdown" aria-haspopup="true" data-bs-display="static" aria-expanded="false">
+                <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
+                  aria-expanded="false">
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dLabel">
@@ -190,11 +160,9 @@
           </div>
         </div>
 
-        <h3 class="hidden-lg hidden-md">Sendo Feito</h3>
-        <div
-          class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column drag-column-in-progress"
-        >
-          <h3 class="visible-lg visible-md">Sendo Feito</h3>
+        <h3 class="hidden-lg hidden-md">Sendo feito</h3>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column drag-column-in-progress">
+          <h3 class="visible-lg visible-md">Sendo feito</h3>
           <ul class="drag-inner-list" id="2" data-index="lista-fazendo"></ul>
         </div>
         <h3 class="hidden-lg hidden-md">Feito</h3>
@@ -205,138 +173,280 @@
           <ul class="drag-inner-list" id="3" data-index="lista-feito"></ul>
         </div>
       </div>
-      <!-- grupo 1 -->
+    </div>
+    <!-- grupo 1 -->
 
-      <!-- grupo 2 -->
-      <!-- <div class="row">
+    <!-- grupo 2 -->
+    <div>
+      <div class="row">
         <div class="col-lg-12">
           <h2>2ª Semana</h2>
         </div>
       </div>
 
-      <div class="row grupo" data-group="grupo1">
-        <h3 class="hidden-lg hidden-md">A Fazer</h3>
+      <div class="row grupo" data-group="grupo2">
+        <h3 class="hidden-lg hidden-md">A fazer</h3>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
-          <h3 class="visible-lg visible-md">A FAZER</h3>
+          <h3 class="visible-lg visible-md">A fazer</h3>
 
-          <ul class="drag-inner-list" id="1" data-index="lista-fazer">
-            
-            
+          <ul class="drag-inner-list" id="4" data-index="lista-fazer">
+            <!--
+						exemplo de conteúdo em uma semana, cada link de conteúdo é um li
+					    dentro de uma ul, sempre posicionados na lista-fazer inicialmente
+				     -->
+            <li class="drag-item fazer" data-item="link2" data-bs-toggle="tooltip" data-placement="top">
+              <a href="02_contexto_organizacao/index.html" target="_blank" class="link2"> Contexto da organização</a>
+              <button class="btPrint imprimir" title="Imprimir o conteúdo"
+                data-conteudo="02_contexto_organizacao">Imprimir</button>
+              <div class="dropdown dropdown-bubble">
+                <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
+                  aria-expanded="false">
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  Mover para:
+                  <li class="mover-fazer">A fazer</li>
+                  <li class="mover-fazendo">Sendo feito</li>
+                  <li class="mover-feito">Feito</li>
+                </ul>
+              </div>
+            </li>
           </ul>
           <div class="mao">
             <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
           </div>
         </div>
 
-        <h3 class="hidden-lg hidden-md">SENDO FEITO</h3>
-        <div
-          class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column drag-column-in-progress"
-        >
-          <h3 class="visible-lg visible-md">SENDO FEITO</h3>
-          <ul class="drag-inner-list" id="2" data-index="lista-fazendo"></ul>
+        <h3 class="hidden-lg hidden-md">Sendo feito</h3>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column drag-column-in-progress">
+          <h3 class="visible-lg visible-md">Sendo feito</h3>
+          <ul class="drag-inner-list" id="5" data-index="lista-fazendo"></ul>
         </div>
-        <h3 class="hidden-lg hidden-md">FEITO</h3>
+        <h3 class="hidden-lg hidden-md">Feito</h3>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
-          <h3 class="visible-lg visible-md">FEITO</h3>
+          <h3 class="visible-lg visible-md">Feito</h3>
           <div class="setinha"></div>
           <div class="exemplo"></div>
-          <ul class="drag-inner-list" id="3" data-index="lista-feito"></ul>
+          <ul class="drag-inner-list" id="6" data-index="lista-feito"></ul>
         </div>
-      </div> -->
-      <!-- grupo 2 -->
+      </div>
+    </div>
+    <!-- grupo 2 -->
 
-
+    <!-- grupo 3 -->
+    <div>
       <div class="row">
-        <div
-          class="col-lg-2 pull-left text-right margin50"
-          style="padding-left: 0"
-        >
-          <a
-            href="referencias/index.html"
-            target="_blank"
-            class="referencias ui-link"
-            title="Referências"
-            role="button"
-            ><img
-              src="tela_inicial/assets/btn_referencias.svg"
-              alt="Referencias"
-          /></a>
-        </div>
-        <div class="col-lg-1 pull-right text-right margin50">
-          <a href="" class="voltar-topo" role="button" title="Voltar ao topo"></a>
+        <div class="col-lg-12">
+          <h2>3ª Semana</h2>
         </div>
       </div>
 
-      <div class="modal fade" id="modal-id">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="separador">
-                <h4>Mover para:</h4>
+      <div class="row grupo" data-group="grupo3">
+        <h3 class="hidden-lg hidden-md">A fazer</h3>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
+          <h3 class="visible-lg visible-md">A fazer</h3>
+
+          <ul class="drag-inner-list" id="7" data-index="lista-fazer">
+            <!--
+						exemplo de conteúdo em uma semana, cada link de conteúdo é um li
+					    dentro de uma ul, sempre posicionados na lista-fazer inicialmente
+				     -->
+            <li class="drag-item fazer" data-item="link3" data-bs-toggle="tooltip" data-placement="top">
+              <a href="03_principios_gestao_qualidade/index.html" target="_blank" class="link3"> Princípios da
+                gestão da qualidade</a>
+              <button class="btPrint imprimir" title="Imprimir o conteúdo"
+                data-conteudo="03_principios_gestao_qualidade">Imprimir</button>
+              <div class="dropdown dropdown-bubble">
+                <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
+                  aria-expanded="false">
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  Mover para:
+                  <li class="mover-fazer">A fazer</li>
+                  <li class="mover-fazendo">Sendo feito</li>
+                  <li class="mover-feito">Feito</li>
+                </ul>
               </div>
-              <div class="separador">
-                <p class="botao-fazendo">Sendo feito</p>
+            </li>
+          </ul>
+          <div class="mao">
+            <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
+          </div>
+        </div>
+
+        <h3 class="hidden-lg hidden-md">Sendo feito</h3>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column drag-column-in-progress">
+          <h3 class="visible-lg visible-md">Sendo feito</h3>
+          <ul class="drag-inner-list" id="8" data-index="lista-fazendo"></ul>
+        </div>
+        <h3 class="hidden-lg hidden-md">Feito</h3>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
+          <h3 class="visible-lg visible-md">Feito</h3>
+          <div class="setinha"></div>
+          <div class="exemplo"></div>
+          <ul class="drag-inner-list" id="9" data-index="lista-feito"></ul>
+        </div>
+      </div>
+    </div>
+    <!-- grupo 3 -->
+    <!-- grupo 4 -->
+    <div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>4ª e 5ª Semanas</h2>
+        </div>
+      </div>
+
+      <div class="row grupo" data-group="grupo4">
+        <h3 class="hidden-lg hidden-md">A fazer</h3>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
+          <h3 class="visible-lg visible-md">A fazer</h3>
+
+          <ul class="drag-inner-list" id="10" data-index="lista-fazer">
+            <!--
+						exemplo de conteúdo em uma semana, cada link de conteúdo é um li
+					    dentro de uma ul, sempre posicionados na lista-fazer inicialmente
+				     -->
+            <li class="drag-item fazer" data-item="link4" data-bs-toggle="tooltip" data-placement="top">
+              <a href="04_ferramentas_qualidade/index.html" target="_blank" class="link4">Ferramentas da qualidade</a>
+              <button class="btPrint imprimir" title="Imprimir o conteúdo"
+                data-conteudo="04_ferramentas_qualidade">Imprimir</button>
+              <div class="dropdown dropdown-bubble">
+                <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
+                  aria-expanded="false">
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  Mover para:
+                  <li class="mover-fazer">A fazer</li>
+                  <li class="mover-fazendo">Sendo feito</li>
+                  <li class="mover-feito">Feito</li>
+                </ul>
               </div>
-              <div class="separador">
-                <p class="botao-feito">Feito</p>
+            </li>
+            <li class="drag-item fazer" data-item="link5" data-bs-toggle="tooltip" data-placement="top">
+              <a href="05_metodologia_gestao/index.html" target="_blank" class="link5">Metodologias de gestão da
+                qualidade</a>
+              <button class="btPrint imprimir" title="Imprimir o conteúdo"
+                data-conteudo="05_metodologia_gestao">Imprimir</button>
+              <div class="dropdown dropdown-bubble">
+                <a id="dLabel" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true"
+                  aria-expanded="false">
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  Mover para:
+                  <li class="mover-fazer">A fazer</li>
+                  <li class="mover-fazendo">Sendo feito</li>
+                  <li class="mover-feito">Feito</li>
+                </ul>
               </div>
+            </li>
+          </ul>
+          <div class="mao">
+            <img src="tela_inicial/assets/ico_mao.png" class="img-responsive" />
+          </div>
+        </div>
+
+        <h3 class="hidden-lg hidden-md">Sendo feito</h3>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column drag-column-in-progress">
+          <h3 class="visible-lg visible-md">Sendo feito</h3>
+          <ul class="drag-inner-list" id="11" data-index="lista-fazendo"></ul>
+        </div>
+        <h3 class="hidden-lg hidden-md">Feito</h3>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 drag-column">
+          <h3 class="visible-lg visible-md">Feito</h3>
+          <div class="setinha"></div>
+          <div class="exemplo"></div>
+          <ul class="drag-inner-list" id="12" data-index="lista-feito"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 pull-left text-right margin50" style="padding-left: 0">
+        <a href="06_referencias/index.html" target="_blank" class="referencias ui-link" title="Referências"
+          role="button"><img src="tela_inicial/assets/btn_referencias.svg" alt="Referencias" /></a>
+      </div>
+      <div class="col-lg-1 pull-right text-right margin50">
+        <a href="" class="voltar-topo" role="button" title="Voltar ao topo"><img src="assets/images/bt_topo.svg"
+            class="seta-topo"></a>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal-id">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="separador">
+              <h4>Mover para:</h4>
+            </div>
+            <div class="separador">
+              <p class="botao-fazendo">Sendo feito</p>
+            </div>
+            <div class="separador">
+              <p class="botao-feito">Feito</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="circulo-3"></div>
-    <div class="circulo-4"></div>
+  </div>
+  <div class="circulo-3"></div>
 
 
-    <!-- partial -->
-    <script src="tela_inicial/default/js/jquery.min.js"></script>
+  <!-- partial -->
+  <script src="tela_inicial/default/js/jquery.min.js"></script>
+  <script src="print/print.js"></script>
+  <script src="tela_inicial/default/js/dragula.min.js"></script>
+  <script src="tela_inicial/default/js/script.js"></script>
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="tela_inicial/default/js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      var titulo;
 
-    <script src="tela_inicial/default/js/dragula.min.js"></script>
-    <script src="tela_inicial/default/js/script.js"></script>
-    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="tela_inicial/default/js/bootstrap.min.js"></script>
-    <script>
-      $(function () {
-        var titulo;
-
-        $(".drag-item.fazer").hover(function () {
-          titulo = $(this).children().first().text();
-          $(this).attr("data-original-title", titulo);
-        });
-
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        console.log(tooltipTriggerList)
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-
-
+      $(".drag-item.fazer").hover(function () {
+        titulo = $(this).children().first().text();
+        $(this).attr("data-original-title", titulo);
       });
-    </script>
-    <script>
-      var scriptElem=document.createElement("script");
-      scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
-      scriptElem.charset="UTF-8",
-      scriptElem.onload=function(){
-            window.ht = new HT({
-                token:"bf5b7efb148a829a126a0e0c9fd533bf",
-                align:"top",
-                videoEnabled: true,
-                ytEmbedReplace: true,           
-                mobileConfig:{align:"right",
-                              actionsAlign:"top",
-                              customButtonStyle:{
-                                    borderRadius:"6px",
-                                    size:"38px",
-                                    horizontalMargin:"13px",
-                                    bottomMargin:"140px",
-                                    rightMargin:"40px"}
-                              }
-              });        
-          $('.ht-skip').attr("aria-hidden","true")
-        },
+
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      console.log(tooltipTriggerList)
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+
+
+    });
+  </script>
+  <script>
+    var scriptElem = document.createElement("script");
+    scriptElem.src = "https://plugin.handtalk.me/web/latest/handtalk.min.js",
+      scriptElem.charset = "UTF-8",
+      scriptElem.onload = function () {
+        window.ht = new HT({
+          token: "bf5b7efb148a829a126a0e0c9fd533bf",
+          align: "top",
+          videoEnabled: true,
+          ytEmbedReplace: true,
+          mobileConfig: {
+            align: "right",
+            actionsAlign: "top",
+            customButtonStyle: {
+              borderRadius: "6px",
+              size: "38px",
+              horizontalMargin: "13px",
+              bottomMargin: "140px",
+              rightMargin: "40px"
+            }
+          }
+        });
+        $('.ht-skip').attr("aria-hidden", "true")
+      },
       document.body.appendChild(scriptElem);
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
