@@ -102,35 +102,16 @@ body {
     margin: auto;
 }
 
-/* .btn-integrada {
-   max-width: 173px;
-    height: 160px;
-    margin-left: 50%;
-    margin-top: 1%; 
-    box-shadow: unset;
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-integrada:hover {
-    background: url('img/hover.png') no-repeat;
-    width: 97px;
-    height: 98px;
-    margin-left: 33%;
-    margin-top: -0.5%;
-    box-shadow: unset;
-    max-width: 170%;
-    position: absolute;
-} */
 
 .btn-integrada {
     position: relative;
     overflow: visible;
-    padding: 70px 90px;
+    padding: 70px 61px;
     font-size: 16px;
     border-radius: 10px;
     max-width: 450px;
-    left: 46%;
+    left: 50%;
+    top: 6%;
     border: none !important;
     box-shadow: none !important;
 }
@@ -138,8 +119,8 @@ body {
 .btn-integrada:hover::after {
     content: '';
     position: absolute;
-    top: -15px; /* Adjust to position the ball */
-    right: 20px; /* Adjust to position the ball */
+    top: -40px; /* Adjust to position the ball */
+    right: -5px; /* Adjust to position the ball */
     width: 97px; /* Adjust the size of the ball */
     height: 98px; /* Adjust the size of the ball */
     background: url('img/hover.png');
@@ -155,7 +136,7 @@ body {
     font-size: 16px;
     border-radius: 10px;
     max-width: 450px;
-    left: 28%;
+    left: 40%;
     top: 28%;
     border: none !important;
     box-shadow: none !important;
@@ -165,7 +146,7 @@ body {
     content: '';
     position: absolute;
     top: -18px; /* Adjust to position the ball */
-    right: -35px; /* Adjust to position the ball */
+    right: -30px; /* Adjust to position the ball */
     width: 97px; /* Adjust the size of the ball */
     height: 98px; /* Adjust the size of the ball */
     background: url('img/hover.png');
@@ -173,6 +154,163 @@ body {
     border: none !important;
     box-shadow: none !important;
 }
+
+.btn-personalizada{
+    position: relative;
+    overflow: visible;
+    padding: 55px 72px;
+    font-size: 16px;
+    border-radius: 20px;
+    max-width: 450px;
+    left: 8%;
+    top: 47%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-personalizada:hover::after {
+    content: '';
+    position: absolute;
+    top: 45px; /* Adjust to position the ball */
+    right: -45px; /* Adjust to position the ball */
+    width: 97px; /* Adjust the size of the ball */
+    height: 98px; /* Adjust the size of the ball */
+    background: url('img/hover.png');
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-inclusiva{
+    position: relative;
+    overflow: visible;
+    padding: 66px 59px;
+    font-size: 16px;
+    border-radius: 20px;
+    max-width: 450px;
+    left: 49%;
+    top: 47%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-inclusiva:hover::after {
+    content: '';
+    position: absolute;
+    top: 45px; /* Adjust to position the ball */
+    right: -20px; /* Adjust to position the ball */
+    width: 97px; /* Adjust the size of the ball */
+    height: 98px; /* Adjust the size of the ball */
+    background: url('img/hover.png');
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-dinamica{
+    position: relative;
+    overflow: visible;
+    padding: 66px 59px;
+    font-size: 16px;
+    border-radius: 20px;
+    max-width: 450px;
+    left: 3%;
+    top: 43%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-dinamica:hover::after {
+    content: '';
+    position: absolute;
+    top: 70px; /* Adjust to position the ball */
+    right: 35px; /* Adjust to position the ball */
+    width: 97px; /* Adjust the size of the ball */
+    height: 98px; /* Adjust the size of the ball */
+    background: url('img/hover.png');
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-melhor{
+    position: relative;
+    overflow: visible;
+    padding: 66px 59px;
+    font-size: 16px;
+    border-radius: 20px;
+    max-width: 450px;
+    left: -40%;
+    top: 25%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-melhor:hover::after {
+    content: '';
+    position: absolute;
+    top: 40px; /* Adjust to position the ball */
+    right: 65px; /* Adjust to position the ball */
+    width: 97px; /* Adjust the size of the ball */
+    height: 98px; /* Adjust the size of the ball */
+    background: url('img/hover.png');
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-fatores{
+    position: relative;
+    overflow: visible;
+    padding: 66px 59px;
+    font-size: 16px;
+    border-radius: 20px;
+    max-width: 450px;
+    left: -64%;
+    top: 1%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-fatores:hover::after {
+    content: '';
+    position: absolute;
+    top: -10px; /* Adjust to position the ball */
+    right: 65px; /* Adjust to position the ball */
+    width: 97px; /* Adjust the size of the ball */
+    height: 98px; /* Adjust the size of the ball */
+    background: url('img/hover.png');
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-melhoria {
+    position: relative;
+    overflow: visible;
+    padding: 70px 61px;
+    font-size: 16px;
+    border-radius: 10px;
+    max-width: 450px;
+    left: 25%;
+    top:-45%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-melhoria:hover::after {
+    content: '';
+    position: absolute;
+    top: -35px; /* Adjust to position the ball */
+    right: 38px; /* Adjust to position the ball */
+    width: 97px; /* Adjust the size of the ball */
+    height: 98px; /* Adjust the size of the ball */
+    background: url('img/hover.png');
+    transition: opacity 0.3s ease;
+    border: none !important;
+    box-shadow: none !important;
+}
+
 
 
 
