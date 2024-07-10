@@ -50,8 +50,6 @@ body {
     background: var(--cor-secundaria);
 }
 
-
-
 .img-zoom {
     display: table;
     position: relative;
@@ -102,7 +100,6 @@ body {
     margin: auto;
 }
 
-
 .btn-integrada {
     position: relative;
     overflow: visible;
@@ -119,10 +116,10 @@ body {
 .btn-integrada:hover::after {
     content: '';
     position: absolute;
-    top: -40px; /* Adjust to position the ball */
-    right: -5px; /* Adjust to position the ball */
-    width: 97px; /* Adjust the size of the ball */
-    height: 98px; /* Adjust the size of the ball */
+    top: -40px;
+    right: -5px;
+    width: 97px;
+    height: 98px;
     background: url('img/hover.png');
     transition: opacity 0.3s ease;
     border: none !important;
@@ -145,17 +142,17 @@ body {
 .btn-estruturada:hover::after {
     content: '';
     position: absolute;
-    top: -18px; /* Adjust to position the ball */
-    right: -30px; /* Adjust to position the ball */
-    width: 97px; /* Adjust the size of the ball */
-    height: 98px; /* Adjust the size of the ball */
+    top: -18px;
+    right: -30px;
+    width: 97px;
+    height: 98px;
     background: url('img/hover.png');
     transition: opacity 0.3s ease;
     border: none !important;
     box-shadow: none !important;
 }
 
-.btn-personalizada{
+.btn-personalizada {
     position: relative;
     overflow: visible;
     padding: 55px 72px;
@@ -171,17 +168,17 @@ body {
 .btn-personalizada:hover::after {
     content: '';
     position: absolute;
-    top: 45px; /* Adjust to position the ball */
-    right: -45px; /* Adjust to position the ball */
-    width: 97px; /* Adjust the size of the ball */
-    height: 98px; /* Adjust the size of the ball */
+    top: 45px;
+    right: -45px;
+    width: 97px;
+    height: 98px;
     background: url('img/hover.png');
     transition: opacity 0.3s ease;
     border: none !important;
     box-shadow: none !important;
 }
 
-.btn-inclusiva{
+.btn-inclusiva {
     position: relative;
     overflow: visible;
     padding: 66px 59px;
@@ -197,17 +194,17 @@ body {
 .btn-inclusiva:hover::after {
     content: '';
     position: absolute;
-    top: 45px; /* Adjust to position the ball */
-    right: -20px; /* Adjust to position the ball */
-    width: 97px; /* Adjust the size of the ball */
-    height: 98px; /* Adjust the size of the ball */
+    top: 45px;
+    right: -20px;
+    width: 97px;
+    height: 98px;
     background: url('img/hover.png');
     transition: opacity 0.3s ease;
     border: none !important;
     box-shadow: none !important;
 }
 
-.btn-dinamica{
+.btn-dinamica {
     position: relative;
     overflow: visible;
     padding: 66px 59px;
@@ -223,17 +220,17 @@ body {
 .btn-dinamica:hover::after {
     content: '';
     position: absolute;
-    top: 70px; /* Adjust to position the ball */
-    right: 35px; /* Adjust to position the ball */
-    width: 97px; /* Adjust the size of the ball */
-    height: 98px; /* Adjust the size of the ball */
+    top: 70px;
+    right: 35px;
+    width: 97px;
+    height: 98px;
     background: url('img/hover.png');
     transition: opacity 0.3s ease;
     border: none !important;
     box-shadow: none !important;
 }
 
-.btn-melhor{
+.btn-melhor {
     position: relative;
     overflow: visible;
     padding: 66px 59px;
@@ -249,17 +246,17 @@ body {
 .btn-melhor:hover::after {
     content: '';
     position: absolute;
-    top: 40px; /* Adjust to position the ball */
-    right: 65px; /* Adjust to position the ball */
-    width: 97px; /* Adjust the size of the ball */
-    height: 98px; /* Adjust the size of the ball */
+    top: 40px;
+    right: 65px;
+    width: 97px;
+    height: 98px;
     background: url('img/hover.png');
     transition: opacity 0.3s ease;
     border: none !important;
     box-shadow: none !important;
 }
 
-.btn-fatores{
+.btn-fatores {
     position: relative;
     overflow: visible;
     padding: 66px 59px;
@@ -275,10 +272,10 @@ body {
 .btn-fatores:hover::after {
     content: '';
     position: absolute;
-    top: -10px; /* Adjust to position the ball */
-    right: 65px; /* Adjust to position the ball */
-    width: 97px; /* Adjust the size of the ball */
-    height: 98px; /* Adjust the size of the ball */
+    top: -10px;
+    right: 65px;
+    width: 97px;
+    height: 98px;
     background: url('img/hover.png');
     transition: opacity 0.3s ease;
     border: none !important;
@@ -293,7 +290,7 @@ body {
     border-radius: 10px;
     max-width: 450px;
     left: 25%;
-    top:-45%;
+    top: -45%;
     border: none !important;
     box-shadow: none !important;
 }
@@ -301,10 +298,10 @@ body {
 .btn-melhoria:hover::after {
     content: '';
     position: absolute;
-    top: -35px; /* Adjust to position the ball */
-    right: 38px; /* Adjust to position the ball */
-    width: 97px; /* Adjust the size of the ball */
-    height: 98px; /* Adjust the size of the ball */
+    top: -35px;
+    right: 38px;
+    width: 97px;
+    height: 98px;
     background: url('img/hover.png');
     transition: opacity 0.3s ease;
     border: none !important;
@@ -403,6 +400,173 @@ body {
         right: 1%;
         bottom: 6%;
     }
+
+    .painel-circulo1 {
+        background: url('img/painel2.png') no-repeat center center;
+        background-size: cover;
+        width: 370px;
+        height: 370px;
+    }
+
+    .btn-integrada {
+        position: relative;
+        overflow: visible;
+        padding: 47px 49px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 52%;
+        top: 2%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-estruturada {
+        position: relative;
+        overflow: visible;
+        padding: 48px 49px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 40%;
+        top: 24%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-melhoria {
+        position: relative;
+        overflow: visible;
+        padding: 63px 43px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: -9%;
+        top: -65%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-personalizada {
+        position: relative;
+        overflow: visible;
+        padding: 37px 52px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: 8%;
+        top: 47%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-personalizada:hover::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        right: -45px;
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-inclusiva {
+        position: relative;
+        overflow: visible;
+        padding: 43px 48px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: 49%;
+        top: 40%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-inclusiva:hover::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        right: -20px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-dinamica {
+        position: relative;
+        overflow: visible;
+        padding: 54px 43px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: -1%;
+        top: 43%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-dinamica:hover::after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-melhor {
+        position: relative;
+        overflow: visible;
+        padding: 48px 56px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: -46%;
+        top: 20%;
+    }
+
+    .btn-fatores {
+        position: relative;
+        overflow: visible;
+        padding: 41px 59px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: 3%;
+        top: -32%;
+    }
+
+    .btn-fatores:hover::after {
+        content: '';
+        position: absolute;
+        top: -30px;
+        right: 65px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-melhoria {
+        position: relative;
+        overflow: visible;
+        padding: 57px 47px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: -9%;
+        top: -51%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+
 
 
 }
