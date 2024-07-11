@@ -93,6 +93,59 @@ body {
     display: none !important;
 }
 
+.borda-colorida2, .destaque2.borda-colorida2 {
+    background: var(--gradiente-borda);
+    color: #000;
+    filter: drop-shadow(rgba(82, 82, 82, 0.3) 7px 7px 5px);
+}
+.destaque2 {
+    border-radius: 25px;
+    margin: 100px 0;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+.borda-colorida2 {
+    border: 5px solid transparent;
+}
+
+/* .destaque2::before {
+    content: '';
+    display: block;
+    height: 87px;
+    width: 86px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    left: -40px;
+} */
+
+.painel-postit{
+    z-index: 0;
+}
+
+.btn-check{
+    background: url('img/painel1_bt1.png');
+    width: 124px;
+    height: 112px;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .painel-circulo1 {
     background: url('img/painel2.png');
     width: 534px;
