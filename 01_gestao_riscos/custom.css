@@ -316,7 +316,7 @@ body {
     display: none;
 }
 
-.margem-top{
+.margem-top {
     margin-top: 20%;
 }
 
@@ -512,6 +512,7 @@ body {
         margin-left: -27%;
         margin-top: 48%;
     }
+
     .desktop {
         display: block;
     }
@@ -539,6 +540,7 @@ body {
     .img-div {
         margin-top: -5%;
     }
+
     .desktop {
         display: block;
     }
@@ -614,6 +616,10 @@ body {
         box-shadow: none !important;
     }
 
+    .btn-integrada:hover::after {
+        transform: scale(0.8);
+    }
+
     .btn-estruturada {
         position: relative;
         overflow: visible;
@@ -627,6 +633,10 @@ body {
         box-shadow: none !important;
     }
 
+    .btn-estruturada:hover::after {
+        transform: scale(0.8);
+    }
+
     .btn-melhoria {
         position: relative;
         overflow: visible;
@@ -638,6 +648,12 @@ body {
         top: -65%;
         border: none !important;
         box-shadow: none !important;
+    }
+
+    .btn-melhoria:hover::after {
+        transform: scale(0.8);
+        top: -35px;
+        right: 28px;
     }
 
     .btn-personalizada {
@@ -661,6 +677,7 @@ body {
         transition: opacity 0.3s ease;
         border: none !important;
         box-shadow: none !important;
+        transform: scale(0.8);
     }
 
     .btn-inclusiva {
@@ -685,6 +702,7 @@ body {
         transition: opacity 0.3s ease;
         border: none !important;
         box-shadow: none !important;
+        transform: scale(0.8);
     }
 
     .btn-dinamica {
@@ -709,6 +727,7 @@ body {
         transition: opacity 0.3s ease;
         border: none !important;
         box-shadow: none !important;
+        transform: scale(0.8);
     }
 
     .btn-melhor {
@@ -720,6 +739,10 @@ body {
         max-width: 450px;
         left: -46%;
         top: 20%;
+    }
+
+    .btn-melhor:hover::after {
+        transform: scale(0.8);
     }
 
     .btn-fatores {
@@ -734,6 +757,10 @@ body {
     }
 
     .btn-fatores:hover::after {
+        transform: scale(0.8);
+    }
+
+    .btn-fatores:hover::after {
         content: '';
         position: absolute;
         top: -30px;
@@ -744,6 +771,7 @@ body {
         transition: opacity 0.3s ease;
         border: none !important;
         box-shadow: none !important;
+        transform: scale(0.8);
     }
 
     .btn-melhoria {
@@ -759,6 +787,10 @@ body {
         box-shadow: none !important;
     }
 
+    .btn-melhoria:hover::after {
+        transform: scale(0.8);
+    }
+
     .elemento1 {
         display: none;
     }
@@ -770,6 +802,161 @@ body {
     .tablet {
         display: none;
     }
+
+    .painel-circulo2 {
+        background: url('img/painel3.png') no-repeat center center;
+        background-size: cover;
+        width: 370px;
+        height: 370px;
+    }
+
+    .btn-lideranca {
+        position: relative;
+        overflow: visible;
+        padding: 70px 60px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 33%;
+        top: 30%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-lideranca:hover::after {
+        content: '';
+        position: absolute;
+        top: -20px;
+        right: 20px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.8);
+    }
+
+    .btn-integracao {
+        position: relative;
+        overflow: visible;
+        padding: 54px 57px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 3%;
+        top: 0%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-integracao:hover::after {
+        transform: scale(0.8);
+    }
+
+    .btn-concepcao {
+        position: relative;
+        overflow: visible;
+        padding: 58px 62px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: -2%;
+        top: 21%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-concepcao:hover::after {
+        transform: scale(0.8);
+    }
+
+    .btn-implementacao {
+        position: relative;
+        overflow: visible;
+        padding: 66px 70px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: 52%;
+        top: 17%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-implementacao:hover::after {
+        content: '';
+        position: absolute;
+        top: 45px;
+        right: -5px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.8);
+    }
+
+    .btn-avaliacao {
+        position: relative;
+        overflow: visible;
+        padding: 61px 68px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: -29%;
+        top: 17%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-avaliacao:hover::after {
+        content: '';
+        position: absolute;
+        top: 65px;
+        right: 45px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.8);
+    }
+
+    .btn-melhoria-2 {
+        position: relative;
+        overflow: visible;
+        padding: 65px 57px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 1%;
+        top: -51%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-melhoria-2:hover::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: 58px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.8);
+    }
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 375px) {
