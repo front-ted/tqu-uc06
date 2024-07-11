@@ -618,6 +618,8 @@ body {
 
     .btn-integrada:hover::after {
         transform: scale(0.8);
+        top: -30px;
+        right: -5px;
     }
 
     .btn-estruturada {
@@ -635,6 +637,8 @@ body {
 
     .btn-estruturada:hover::after {
         transform: scale(0.8);
+        top: -18px;
+        right: -45px;
     }
 
     .btn-melhoria {
@@ -721,7 +725,7 @@ body {
     .btn-dinamica:hover::after {
         content: '';
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 25px;
         background: url('img/hover.png');
         transition: opacity 0.3s ease;
@@ -743,6 +747,8 @@ body {
 
     .btn-melhor:hover::after {
         transform: scale(0.8);
+        top: 35px;
+        right: 55px;
     }
 
     .btn-fatores {
@@ -757,14 +763,10 @@ body {
     }
 
     .btn-fatores:hover::after {
-        transform: scale(0.8);
-    }
-
-    .btn-fatores:hover::after {
         content: '';
         position: absolute;
-        top: -30px;
-        right: 65px;
+        top: -25px;
+        right: 55px;
         width: 97px;
         height: 98px;
         background: url('img/hover.png');
@@ -1133,6 +1135,181 @@ body {
         box-shadow: none !important;
         transform: scale(0.6);
     }
+
+    .painel-circulo2 {
+        background: url('img/painel3.png') no-repeat center center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    .btn-lideranca {
+        position: relative;
+        overflow: visible;
+        padding: 49px 48px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 33%;
+        top: 30%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-lideranca:hover::after {
+        content: '';
+        position: absolute;
+        top: -25px;
+        right: 0px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.6);
+    }
+
+    .btn-integracao {
+        position: relative;
+        overflow: visible;
+        padding: 46px 44px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 3%;
+        top: 0%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-integracao:hover::after {
+        content: '';
+        position: absolute;
+        top: -40px;
+        right: 15px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.6);
+    }
+
+    .btn-melhoria-2 {
+        position: relative;
+        overflow: visible;
+        padding: 49px 43px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 5%;
+        top: -49%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-melhoria-2:hover::after {
+        content: '';
+        position: absolute;
+        top: -15px;
+        right: 35px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.6);
+    }
+
+    .btn-concepcao {
+        position: relative;
+        overflow: visible;
+        padding: 54px 51px;
+        font-size: 16px;
+        border-radius: 10px;
+        max-width: 450px;
+        left: 1%;
+        top: 21%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-concepcao:hover::after {
+        content: '';
+        position: absolute;
+        top: -18px;
+        right: -30px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.6);
+    }
+
+    .btn-implementacao {
+        position: relative;
+        overflow: visible;
+        padding: 55px 57px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: 52%;
+        top: 20%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-implementacao:hover::after {
+        content: '';
+        position: absolute;
+        top: 35px;
+        right: 0px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.6);
+    }
+
+    .btn-avaliacao {
+        position: relative;
+        overflow: visible;
+        padding: 51px 53px;
+        font-size: 16px;
+        border-radius: 20px;
+        max-width: 450px;
+        left: -29%;
+        top: 22%;
+        border: none !important;
+        box-shadow: none !important;
+    }
+
+    .btn-avaliacao:hover::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        right: 25px;
+        width: 97px;
+        height: 98px;
+        background: url('img/hover.png');
+        transition: opacity 0.3s ease;
+        border: none !important;
+        box-shadow: none !important;
+        transform: scale(0.6);
+    }
+
+
+
+
+
+
 
 
 }
