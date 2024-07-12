@@ -79,6 +79,20 @@
     filter: drop-shadow(#333 3px 3px 4px);
 }
 
+.destaque1 {
+    border-radius: 25px;
+    margin: 100px 0;
+    padding: 40px;
+    background-image: var(--gradiente-secundario);
+    position: relative;
+    z-index: 2;
+    color: #ffff;
+}
+
+.list-disc {
+    list-style-type:circle;
+    list-style-image: none !important;
+  }
 
 .btn-download {
     margin-top: -14%;
