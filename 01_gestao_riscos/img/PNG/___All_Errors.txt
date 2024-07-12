@@ -1,5 +1,0 @@
-CorrelationId: 4d0f2d13-359b-4dc0-84a7-6a592a0232c5
-UTC DateTime: 04/05/2024 17:06:25
-
-The following file/folder has not been downloaded
-0. bg_bloco1_elemento.png
