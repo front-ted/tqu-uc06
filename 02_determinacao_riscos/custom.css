@@ -61,6 +61,7 @@
     background: var(--cor-secundaria);
 } */
 
+
 .img-zoom {
     display: table;
     position: relative;
@@ -73,7 +74,7 @@
     display: block;
     width: 88px;
     height: 88px;
-    right: 20%;
+    right: 1%;
     bottom: 2%;
     position: absolute;
     filter: drop-shadow(#333 3px 3px 4px);
@@ -90,9 +91,9 @@
 }
 
 .list-disc {
-    list-style-type:circle;
+    list-style-type: circle;
     list-style-image: none !important;
-  }
+}
 
 .btn-download {
     margin-top: -14%;
@@ -126,6 +127,40 @@
     border: 5px solid transparent;
     border-radius: 25px;
 }
+
+.painel-ferramentas {
+    background: url('img/bg_bts.png') no-repeat;
+    background-position: top;
+    background-size: 45%;
+    padding-bottom: 8%;
+}
+
+.img-maior {
+    max-width: 100% !important;
+}
+
+.list-right-marker {
+    list-style: none;
+    padding: 6px;
+    margin: 0;
+}
+
+.list-right-marker li {
+    position: relative;
+    padding-right: 40px;
+}
+
+.list-right-marker li::after {
+    content: '•';
+    position: absolute;
+    right: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+
+
+
 
 
 
@@ -230,6 +265,14 @@
         display: none;
     }
 
+    .list-right-marker li::after {
+        content: '•';
+        position: absolute;
+        right: 66%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -243,6 +286,14 @@
         padding-top: 3%;
     }
 
+    .list-right-marker li::after {
+        content: '•';
+        position: absolute;
+        right: 73%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.2em;
+    }
 
 }
 
@@ -259,18 +310,20 @@
         bottom: 6%;
     }
 
-    
-    
+    .list-right-marker li::after {
+        content: '•';
+        position: absolute;
+        right: 103%;
+        top: 32%;
+        transform: translateY(-50%);
+        font-size: 1.2em;
+    }
+
+
 
 
 
 
 }
 
-@media screen and (max-width: 375px) {
-   
-
-
-
-
-}
+@media screen and (max-width: 375px) {}

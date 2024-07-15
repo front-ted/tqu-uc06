@@ -11,7 +11,10 @@
 .pagina *:before{
   all: unset;
 }
-
+.img-maior{
+  max-width: 110% !important;
+  left: -4%;
+}
 /* VALORES DEFAULT DE TUDO*/
 .pagina a:link	{
   color: (internal value);

@@ -12,7 +12,10 @@
 .bt-print:hover{
   transform: scale(1.1);
 }
-
+.img-maior{
+  max-width: 110% !important;
+  left: -4%;
+}
 .only-print, .apenas-print, .apenas-imprimir {
   display: none;
 }
