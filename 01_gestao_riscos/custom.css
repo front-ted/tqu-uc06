@@ -122,7 +122,6 @@
     z-index: 0;
 }
 
-
 .btn-checklist1 {
     background: url('img/painel1_bt1.png') no-repeat;
     width: 124px;
@@ -659,6 +658,9 @@
     font-size: 1.25rem;
 }
 
+blockquote {
+    margin-left: 140px;
+}
 
 
 
@@ -1209,6 +1211,10 @@
         top: 88.1%;
         position: absolute;
         left: 35%;
+    }
+
+    blockquote {
+        margin-left: 69px;
     }
 }
 
