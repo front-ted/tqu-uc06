@@ -45,9 +45,30 @@
                 <h1 id="nome-curso" class="only-print">Técnico em Qualidade</h1>
             </div>
             <div id="toggleButton" class="btn-tema_pagina no-print" onclick="toggleBackgroundImage()"></div>
-
         </div>
     </header>
+    <!--Menu lateral-->
+    <button class="bt-hamburguer" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+        aria-controls="offcanvasWithBackdrop"></button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Técnico em Qualidade</h5>
+            <button type="button" class="bt-fecharmenu text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <nav id="nav-offcanvas" class="offcanvas-body">
+            <ul>
+                <li><a href="#titulo1">Introdução</a></li>
+                <li><a href="#titulo2"><i>Brainstorming</i> </a></li>
+                <li><a href="#titulo3">Matriz SWOT ou FOFA </a></li>
+                <li><a href="#titulo4">Matriz GUT </a></li>
+                <li><a href="#titulo5">COSO </a></li>
+                <li><a href="#titulo6">FMEA </a></li>
+                <li><a href="#titulo7">Encerramento</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <!-- Section principal #booklet OBRIGATÓRIO para funcionamento do print -->
     <section id="booklet">
@@ -137,8 +158,8 @@
 
 
 
-            <!-- Paginação-->
-            <!--         <footer class="text-center no-print d-flex justify-content-center mx-auto">
+        <!-- Paginação-->
+        <!--         <footer class="text-center no-print d-flex justify-content-center mx-auto">
             <ul class="pagination">
 
             </ul>
