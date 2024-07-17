@@ -19,7 +19,25 @@
 .only-print, .apenas-print, .apenas-imprimir {
   display: none;
 }
+.text-white{
+  color: #000 !important;
+}
+.vertical-table {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: auto;
+  border-collapse: collapse;
+}
+.vertical-table th,
+.vertical-table td {
+  border: 1px solid black;
+}
 
+.pagina th {
+  display: table-cell;
+  vertical-align: inherit;
+  padding: 6px;
+}
 @media print {
   @page {
     size: A4;
