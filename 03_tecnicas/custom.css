@@ -52,7 +52,7 @@ body {
 .elemento2 {
     position: absolute;
     margin-left: 103%;
-    margin-top: -53%;
+    margin-top: 6%;
 }
 
 .elemento3 {
@@ -187,9 +187,9 @@ body {
 
     .elemento2 {
         position: absolute;
-        margin-left: 92%;
-        margin-top: -53%;
-        max-width: 28%;
+        margin-left: 96%;
+        margin-top: 6%;
+        max-width: 24%;
     }
 }
 
@@ -243,7 +243,7 @@ body {
     .elemento2 {
         position: absolute;
         margin-left: 95%;
-        margin-top: -53%;
+        margin-top: 6%;
         max-width: 22%;
     }
 }
