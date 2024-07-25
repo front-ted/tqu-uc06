@@ -51,6 +51,10 @@
     padding-bottom: 3%;
     background-image: linear-gradient(to left top, rgba(128, 172, 211, 0.5), rgba(227, 144, 140, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
 }
+.citacao{
+    margin-left: 25%;
+    font-size: 16px;
+}
 
 .destaque-cor {
     background: var(--cor-secundaria);
@@ -88,14 +92,6 @@
 .img-audio {
     margin-right: 25%;
     margin-top: 13%;
-}
-
-.audio-player::after {
-    display: none !important;
-}
-
-.audio-player::before {
-    display: none !important;
 }
 
 .borda-colorida2 {

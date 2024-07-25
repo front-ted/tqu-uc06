@@ -4,6 +4,33 @@
   font-family: 'Libre Franklin Regular';
 }
 
+.bg-red {
+  background-color: #ff5050 !important;
+}
+
+.bg-laranja {
+  background-color: #ff955b !important;
+}
+
+.bg-amarelo {
+  background-color: #ffd966 !important;
+}
+
+.bg-verde {
+  background-color: #c8d45b !important;
+}
+
+.bg-verde-escuro {
+  background-color: #92d050 !important;
+}
+
+.table td{
+    border: 1px solid black;
+}
+
+
+
+
 /* SUPER RESET */
 .pagina *{
   all: unset;
