@@ -24,11 +24,54 @@
   background-color: #92d050 !important;
 }
 
-.table td{
-    border: 1px solid black;
+.green {
+  background-color: #00b050 !important;
+}
+
+.light-green {
+  background-color: #92d050 !important;
+}
+
+.yellow {
+  background-color: #FFFF00 !important;
+}
+
+.orange {
+  background-color: #FFCC00 !important;
+}
+
+.red {
+  background-color: #FF0000 !important;
+}
+
+.cinza {
+  background-color: #e3e3e3 !important;
+  color: #000;
+}
+
+.white {
+  background-color: #ffff !important;
 }
 
 
+.table td{
+    border: 1px solid black;
+}
+.table th{
+  border: 1px solid black;
+}
+
+.imagem-vertical {
+  transform: rotate(90deg);
+  max-width: 162% !important;
+  left: -208px !important;
+  top: 140px !important; 
+}
+
+.margem-top{
+  margin-top:290px !important;
+
+}
 
 
 /* SUPER RESET */
@@ -293,7 +336,7 @@
 .pagina table{
   display: table;
   border-collapse: separate;
-  border-spacing: 2px;
+  border-spacing: 0px;
   border-color: gray;	
   margin: auto;
 

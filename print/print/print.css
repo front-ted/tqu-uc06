@@ -62,6 +62,25 @@
   border: 1px solid black;
 }
 
+.imagem-vertical {
+  transform: rotate(90deg);
+  max-width: 162% !important;
+  left: -208px !important;
+  top: 140px !important; 
+}
+
+.margem-top{
+  margin-top:290px !important;
+
+}
+.table td{
+  border: 1px solid black;
+}
+.table th{
+border: 1px solid black;
+}
+
+
 @media print {
   @page {
     size: A4;
