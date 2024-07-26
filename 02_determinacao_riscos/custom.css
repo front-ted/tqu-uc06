@@ -157,13 +157,6 @@ blockquote {
     border-radius: 25px;
 }
 
-.painel-ferramentas {
-    background: url('img/bg_bts.png') no-repeat;
-    background-position: top;
-    background-size: 45%;
-    padding-bottom: 8%;
-}
-
 .img-maior {
     max-width: 100% !important;
 }
@@ -226,6 +219,7 @@ blockquote {
     background-color: #ffff !important;
 }
 
+
 .vertical-text {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -260,10 +254,59 @@ tfoot td {
     height: 116px;
 }
 
-.titulo-audio2, .titulo-audio3{
+.titulo-audio2,
+.titulo-audio3 {
     padding-top: 20px;
     margin-left: -20px;
 }
+
+.painel-ferramentas{
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+.btn-lampada1 {
+    background: url('img/bt01.png') no-repeat;
+    width: 126px;
+    height: 211px;
+    border: unset;
+}
+
+.btn-lampada1:hover {
+    background: url('img/bt01_2.png') no-repeat;
+    width: 189px;
+    height: 240px;
+    border: unset;
+}
+
+.btn-lampada2 {
+    background: url('img/bt02.png') no-repeat;
+    width: 126px;
+    height: 211px;
+    border: unset;
+}
+
+.btn-lampada2:hover {
+    background: url('img/bt02_2.png') no-repeat;
+    width: 189px;
+    height: 240px;
+    border: unset;
+}
+
+.btn-lampada3 {
+    background: url('img/bt03.png') no-repeat;
+    width: 126px;
+    height: 211px;
+    border: unset;
+}
+
+.btn-lampada3:hover {
+    background: url('img/bt03_2.png') no-repeat;
+    width: 189px;
+    height: 240px;
+    border: unset;
+}
+
 
 
 
@@ -386,5 +429,7 @@ tfoot td {
         margin-left: 69px;
     }
 
+    .painel-ferramentas {
+        margin: auto;
+    }
 }
-
