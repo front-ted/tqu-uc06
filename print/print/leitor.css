@@ -4,6 +4,8 @@
   font-family: 'Libre Franklin Regular';
 }
 
+
+
 .bg-red {
   background-color: #ff5050 !important;
 }
@@ -85,6 +87,13 @@
   max-width: 110% !important;
   left: -4%;
 }
+
+.img-maior2{
+  max-width: 113% !important;
+  margin-left: -70px !important;
+}
+
+
 .text-white{
   color: #000 !important;
 }

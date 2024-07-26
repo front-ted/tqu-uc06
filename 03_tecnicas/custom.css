@@ -110,13 +110,39 @@ body {
     margin-top: 13%;
 }
 
-.audio-player::after {
-    display: none !important;
+.audio-player::before {
+    content: '';
+    background: url('../assets/images/podcast_esq.png') no-repeat;
+    height: 276px;
+    width: 302px;
+    position: absolute;
+    left: -55px;
+    bottom: -31px;
+    scale: 0.8;
 }
 
-.audio-player::before {
-    display: none !important;
+.audio-player::after {
+    content: '';
+    background: url('../assets/images/podcas_dir.png') no-repeat;
+    height: 275px;
+    width: 290px;
+    position: absolute;
+    right: -61px;
+    bottom: -27px;
+    z-index: 2;
+    scale: 0.8;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .borda-colorida2 {
     background: var(--gradiente-borda);
@@ -146,7 +172,11 @@ body {
     max-width: 250px;
     border: 5px solid transparent;
 }
-
+tr {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+}
 
 
 
@@ -275,6 +305,13 @@ body {
     .elemento3 {
         display: none;
     }
+
+    .audio-player::after{
+        left: 35%;
+    }
+
+
+
 }
 
 @media only screen and (max-width:768px) {
@@ -332,11 +369,43 @@ body {
         width: auto;
     }
 
+    .audio-player::before {
+        scale: 0.7;
+        left: -75px;
+        bottom: -35px;
+        top: 156px;
+    }
+
+    .audio-player::after {
+        scale: 0.7;
+        top: 156px;
+    }
+
+
+
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 375px) {
     .selo {
         max-width: 40%;
     }
+    .audio-player::before {
+        scale: 0.65;
+        left: -86px;
+        bottom: -35px;
+        top: 156px;
+    }
+    .audio-player::after {
+        scale: 0.65;
+        top: 156px;
+        left: 35px;
+    }
+
 
 }

@@ -16,6 +16,11 @@
   max-width: 110% !important;
   left: -4%;
 }
+
+.img-maior2{
+  max-width: 113% !important;
+  margin-left: -70px !important;
+}
 .only-print, .apenas-print, .apenas-imprimir {
   display: none;
 }
@@ -79,7 +84,10 @@
 .table th{
 border: 1px solid black;
 }
-
+.img-maior2{
+  max-width: 109% !important;
+  margin-left: -63px !important;
+}
 
 @media print {
   @page {
