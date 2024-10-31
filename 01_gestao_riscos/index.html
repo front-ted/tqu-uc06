@@ -27,6 +27,8 @@
     <!-- Estilos do template -->
     <link rel="stylesheet" href="../assets/css/cores.css">
     <link rel="stylesheet" href="../assets/css/template.css">
+    <!-- Estilos do visualizador -->
+    <link rel="stylesheet" href="oda/cubo3d/viewer_3d/css/viewer.css">
     <link rel="stylesheet" href="custom.css">
 </head>
 
@@ -272,9 +274,28 @@
                         <h4>Tipos de riscos</h4>
                         <img src="img/bg_elemento1.png" class="elemento-video no-print">
                         <p class="no-print"> Clique ou toque para visualizar o conteúdo.</p>
-                        <div class="no-print espera-video d-block mx-auto">
-                            VIDEO
-                        </div>
+                        <p class="no-print d-none d-md-block">Utilize o botão esquerdo do mouse para girar o objeto, o
+                            direito para arrastar ele
+                            de um
+                            lado para o outro e a rodinha do mouse para aproximar ou afastar.
+                        </p>
+                        <model-viewer id="cubo" alt="Personagem" reveal="interaction" camera-orbit="45deg 55deg 2.5m"
+                            src="oda/cubo3d/fbx/cubo.glb" ar ar-scale="auto" ar-modes="webxr scene-viewer quick-look"
+                            environment-image="" poster="oda/cubo3d/thumb.png" shadow-intensity="1" camera-controls>
+                            <div id="thumb-cubo" slot="poster"></div>
+                            <button slot="poster" class="btLoad"><i class="fas fa-cloud-download-alt"></i>Carregar o
+                                modelo 3D</button>
+                            <button
+                                onclick="this.parentElement.requestFullscreen(); this.style.visibility = 'hidden'; this.parentElement.querySelector('.btExitFullScreen').style.visibility = 'visible'"
+                                class="btFullScreen" title="Tela cheia"> <i class="fas fa-expand"></i></button>
+                            <button
+                                onclick="document.exitFullscreen(); this.style.visibility = 'hidden'; this.parentElement.querySelector('.btFullScreen').style.visibility = 'visible'"
+                                class="btExitFullScreen" title="Sair da tela cheia"> <i
+                                    class="fas fa-compress"></i></button>
+                        </model-viewer>
+                        <br><br>
+
+
                         <div class="acessivel visually-hidden print">
                             <p>
                                 Em um ambiente empresarial dinâmico, competitivo e complexo, as organizações enfrentam
@@ -3227,6 +3248,17 @@
                 $("body").addClass("bg-claro")
             }
         });
+    </script>
+
+    <!--arquivo js necessario para o funcionamento do visualizador 3d-->
+    <script type="module" src="oda/cubo3d/viewer_3d/js/model-viewer.min.js"></script>
+
+    <!-- arquivo js responsavel pela funcionalidade de panning no modelo 3d-->
+    <script src="oda/cubo3d/viewer_3d/js/pan.js"></script>
+
+    <script>
+        AddPan('#cubo');
+
     </script>
 
     <!-- Handtalk -->

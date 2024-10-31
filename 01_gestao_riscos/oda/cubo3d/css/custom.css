@@ -1,0 +1,68 @@
+html, body{
+    background-color: gainsboro;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+    background-color: darkblue;   
+    text-align: center;
+    margin: 0;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, .1);
+    z-index: 2;
+}
+header h1{
+    color: white;
+}
+.container{
+    min-height: 100%;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px; 
+    padding-top: 10px;
+    max-width: 1200px;  
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    margin-bottom: 50px;
+    border-radius:  0 0 20px 20px;
+    font-size: 1.2rem;
+    line-height: 1.4;    
+
+}
+.pagina{
+    padding-top: 1px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, .2);
+}
+
+
+
+
+.breaker{
+    word-break: break-all;
+}
+
+code{
+    overflow-x: scroll;
+    max-width: 100%;
+    display: block;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: darkblue;
+}
