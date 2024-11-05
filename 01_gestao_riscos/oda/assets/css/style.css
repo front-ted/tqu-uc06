@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth@75..125&display=swap') !important;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth@75..125&family=Roboto+Condensed:ital,wght@0,100..900 !important;1,100..900&display=swap') !important;
+
+
+*,
+::after,
+::before {
+    box-sizing: inherit !important;
+}
+
+.obj-jogo-encontre  .conteudo-encontre {
+    text-align: center !important;
+    background-color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.obj-jogo-encontre  .topo-intro {
+    background-color: #00498d !important !important;
+    display: block !important;
+    padding: 3% !important;
+    margin: 1% !important;
+    margin-inline: 3% !important;
+    border-radius: 20px !important;
+}
+
+.obj-jogo-encontre  .p-encontre {
+    color: #fff !important;
+    font-weight: bold !important;
+    font-size: 23px !important;
+    font-family: "Fredoka", sans-serif !important;
+}
+
+.obj-jogo-encontre  .colunas-encontre {
+    text-align: left !important;
+}
+
+.obj-jogo-encontre  .linha {
+    margin: 1% !important;
+    justify-content: center !important;
+}
+
+.obj-jogo-encontre .linha1,
+.obj-jogo-encontre .linha2,
+.obj-jogo-encontre .linha3,
+.obj-jogo-encontre .linha4 {
+    border-bottom: 4px solid #00498d !important;
+}
+
+.obj-jogo-encontre .categoria {
+    font-family: "Fredoka", sans-serif !important;
+    color: #00498d !important;
+    font-weight: bold !important;
+}
+
+.obj-jogo-encontre .conjunto-bts {
+    text-align: left !important;
+}
+
+.obj-jogo-encontre .btn-carrosel {
+    font-size: 50px !important;
+    font-weight: bold !important;
+    background-color: #00498d !important;
+    color: #fff !important;
+    margin-bottom: 4% !important;
+    width: 79px !important;
+    height: 88px !important;
+    border: none !important;
+}
+
+.obj-jogo-encontre .btn-carrosel:hover {
+    background-color: #7bbaf5 !important;
+    color: #00498d !important;
+    transform: scale(1.1) !important;
+    box-shadow: 2px 2px 2px rgba(34, 52, 131, 0.411) !important;
+}
+
+.obj-jogo-encontre .div-texto {
+    margin: 1px !important;
+    cursor: pointer !important;
+}
+
+.obj-jogo-encontre .cabecalho-texto {
+    width: 270px !important;
+    color: white !important;
+    border-radius: 30px 30px 0px 0px !important;
+    height: 37px !important;
+    align-items: center !important;
+    margin-inline: 0px !important;
+}
+
+.obj-jogo-encontre .cinza {
+    color: gray !important;
+}
+
+.obj-jogo-encontre .risco {
+    background-color: #f18c8a !important;
+}
+
+.obj-jogo-encontre .oportunidade {
+    background-color: #147fdd !important;
+}
+
+.obj-jogo-encontre .p-descricao-risco {
+    background-color: #ffe8e8 !important;
+    border: 2px solid #f18c8a !important;
+    border-top: 9px solid #f18c8a !important;
+}
+
+.obj-jogo-encontre .p-descricao-oportunidade {
+    background-color: #bce0ff !important;
+    border: 2px solid #147fdd !important;
+    border-top: 9px solid #147fdd !important;
+}
+
+.obj-jogo-encontre .h1-titulo {
+    margin: 0px !important;
+}
+
+.obj-jogo-encontre .p-descricao {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 18px !important;
+    height: 145px !important;
+    padding: 2% !important;
+    width: 300px !important;
+}
+
+.obj-jogo-encontre .modal-footer {
+    justify-content: center !important;
+}
+
+.obj-jogo-encontre .p-descricao-categoria:hover {
+    background-color: #808285 !important;
+    color: white !important;
+}
+
+.obj-jogo-encontre .btn-selecionar {
+    border-radius: 7px !important;
+    background-color: #17647c !important;
+    padding-inline: 4px !important;
+    color: white !important;
+    font-size: 23px !important;
+    border: none !important;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.89) !important;
+    font-family: "Fredoka", sans-serif !important;
+}
+
+.obj-jogo-encontre .span-selecionar {
+    border: 1px solid #92a0a5 !important;
+    border-radius: 7px !important;
+    padding: 7px !important;
+    padding-inline: 53px !important;
+}
+
+.obj-jogo-encontre .btn-selecionar:hover {
+    background-color: #17647c81 !important;
+}
+
+.obj-jogo-encontre .btn-selecionar:disabled {
+    background-color: #999999 !important;
+    color: #cccccc !important;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.89) !important;
+}
+
+#modalCarrosselLabel {
+    font-size: 23px !important;
+    padding: 3% !important;
+    text-align: center !important;
+    color: #939393 !important;
+    margin: 6% !important;
+    font-family: "Fredoka", sans-serif !important;
+}
+
+.obj-jogo-encontre .div-categoria-modal-cabecalho {
+    font-size: 20px !important;
+    padding: 1% !important;
+    text-align: center !important;
+    color: #00498d !important;
+    font-family: "Fredoka", sans-serif !important;
+}
+
+.obj-jogo-encontre .h1-categoria-modal-cabecalho {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    padding-bottom: 8px !important;
+    text-transform: uppercase !important;
+}
+
+.obj-jogo-encontre .carrosel {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    overflow: hidden !important;
+    position: relative !important;
+    height: 100% !important;
+}
+
+.obj-jogo-encontre .div-texto-modal {
+    flex: none !important;
+    box-sizing: border-box !important;
+    padding: 10px !important;
+    text-align: center !important;
+}
+
+.obj-jogo-encontre .controle {
+    margin: 0px !important;
+    height: 100% !important;
+    background-color: #5c96cc !important;
+    border: 1px solid #5c96cc !important;
+    width: 50px !important;
+    opacity: 9 !important;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.obj-jogo-encontre .controle:hover {
+    background-color: #6bb9ff !important;
+    border: none !important;
+}
+
+.obj-jogo-encontre .carrosel-controle-voltar {
+    left: 0px !important;
+}
+
+.obj-jogo-encontre .carrosel-controle-proximo {
+    right: 0px !important;
+}
+
+.obj-jogo-encontre .disabled-button {
+    background-color: #afbecc !important;
+    color: white !important;
+    cursor: not-allowed !important;
+    border: none !important;
+}
+
+.obj-jogo-encontre .disabled-button:hover {
+    background-color: #afbecc !important;
+    border: none !important;
+}
+
+.obj-jogo-encontre .body-modal-final {
+    background-color: #00498d !important;
+    color: white !important;
+    font-family: "Fredoka", sans-serif !important;
+    font-size: 23px !important;
+}
+
+.obj-jogo-encontre .title-final {
+    font-family: "Fredoka", sans-serif !important;
+    font-size: 27px !important;
+    color: #00498d !important;
+}
+
+.obj-jogo-encontre .btn-final {
+    border-radius: 7px !important;
+    background-color: #17647c !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.89) !important;
+    font-family: "Fredoka", sans-serif !important;
+    font-size: 23px !important;
+}
+
+.obj-jogo-encontre .span-fechar {
+    border: 1px solid #92a0a5 !important;
+    border-radius: 7px !important;
+    padding: 7px !important;
+    padding-inline: 53px !important;
+}
+
+.obj-jogo-encontre .modal-header {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    flex-direction: column !important;
+}
+
+.obj-jogo-encontre .modal-header .btn-close {
+    position: absolute !important;
+    right: 10px !important;
+    top: 10px !important;
+}
+
+.obj-jogo-encontre .estrutura {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+
+.obj-jogo-encontre .topo,
+.obj-jogo-encontre .meio,
+.obj-jogo-encontre .rodape {
+    width: 100% !important;
+    position: relative !important;
+}
+
+.obj-jogo-encontre .topo {
+    height: 27px !important;
+}
+
+.obj-jogo-encontre .rodape {
+    height: 40px !important;
+}
+
+.obj-jogo-encontre .topo::after,
+.obj-jogo-encontre .topo::before,
+.obj-jogo-encontre .meio::after,
+.obj-jogo-encontre .meio::before,
+.obj-jogo-encontre .rodape::after,
+.obj-jogo-encontre .rodape::before {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+}
+
+.obj-jogo-encontre .topo::after,
+.obj-jogo-encontre .topo::before {
+    width: 32px !important;
+    height: 27px !important;
+}
+
+.obj-jogo-encontre .topo::before {
+    background: url(../img/estrurtura_quadro/topleft.png) top left no-repeat !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+.obj-jogo-encontre .topo::after {
+    background: url(../img/estrurtura_quadro/topright.png) top right no-repeat !important;
+    top: 0 !important;
+    right: 0 !important;
+}
+
+.obj-jogo-encontre .topo>div {
+    background: url(../img/estrurtura_quadro/top.png) top left repeat-x !important;
+    height: 27px !important;
+}
+
+.obj-jogo-encontre .topo>div,
+.obj-jogo-encontre .rodape>div {
+    width: calc(100% - 64px) !important;
+    margin: auto !important;
+    display: block !important;
+}
+
+.obj-jogo-encontre .rodape>div {
+    background: url(../img/estrurtura_quadro/bottom.png) bottom left repeat-x !important;
+    height: 40px !important;
+}
+
+.obj-jogo-encontre .rodape::after,
+.obj-jogo-encontre .rodape::before {
+    width: 32px !important;
+    height: 40px !important;
+}
+
+.obj-jogo-encontre .rodape::before {
+    background: url(../img/estrurtura_quadro/bottomleft.png) bottom left no-repeat !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
+
+.obj-jogo-encontre .rodape::after {
+    background: url(../img/estrurtura_quadro/bottomright.png) bottom right no-repeat !important;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+
+.obj-jogo-encontre .meio {
+    padding: 0px 30px !important;
+    width: calc(100% - 60px) !important;
+    overflow: hidden !important;
+}
+
+.obj-jogo-encontre .meio::after,
+.meio::before {
+    width: 23px !important;
+    height: 100% !important;
+}
+
+.obj-jogo-encontre .meio::before {
+    background: url(../img/estrurtura_quadro/left.png) top left repeat-y !important;
+    left: 1px !important;
+    top: 0 !important;
+}
+
+.obj-jogo-encontre .meio::after {
+    background: url(../img/estrurtura_quadro/right.png) top right repeat-y !important;
+    right: 1px !important;
+    top: 0 !important;
+}
+
+.obj-jogo-encontre .modal-content {
+    border-radius: 10px !important;
+}
+
+.obj-jogo-encontre .modal-body {
+    font-family: "Fredoka", sans-serif !important;
+}
+
+.obj-jogo-encontre #feedbackMessage {
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+.obj-jogo-encontre .feedback-success {
+    color: green !important;
+}
+
+.obj-jogo-encontre .feedback-error {
+    color: red !important;
+}
+
+.obj-jogo-encontre #feedbackIcon {
+    width: 50px !important;
+}

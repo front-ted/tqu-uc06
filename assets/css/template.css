@@ -440,7 +440,7 @@ tbody td:first-child {
     background: #fff;
 }
 
-.modal-content {
+.modal-content:not(.obj-jogo-encontre .modal-content) {
     border: unset;
     background: unset;
 }
