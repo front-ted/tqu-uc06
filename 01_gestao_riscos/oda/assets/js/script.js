@@ -1,5 +1,9 @@
 $(document).ready(function () {
     criarBodyJogo();
+    // Certifique-se de que os elementos de áudio foram criados
+    const somErro = $('#audio-erro')[0];
+    const somAcerto = $('#audio-acerto')[0];
+
     controleCarrossel();
     cloneECorrecao();
     $('#modalCarrossel').on('shown.bs.modal', function () {
@@ -108,28 +112,38 @@ function cloneECorrecao() {
     function verificarRespostas(linha) {
         const linhaId = linha.attr('class').split(' ')[0];
         const respostasLinha = respostasCorretas[linhaId];
-
+        
+        // Mova a definição de somErro e somAcerto para dentro da função
+        const somErro = $('#audio-erro')[0];
+        const somAcerto = $('#audio-acerto')[0];
+    
         linha.find('.div-texto-modal').each(function () {
             const divClonada = $(this);
             const divClasse = divClonada.attr('class').split(' ').filter(cls => cls.startsWith('categoria-'))[0];
-
+    
             if (divClonada.hasClass('feedback-correto')) {
                 return;
             }
-
+    
             if (respostasLinha.includes(divClasse)) {
                 exibirFeedbackModal('Correto!', 'oda/assets/img/positivo.png', 'feedback-success');
-                somAcerto.play();
+                // Verifique se o áudio está disponível antes de tocar
+                if (somAcerto) {
+                    somAcerto.play().catch(error => console.error("Erro ao reproduzir o som de acerto:", error));
+                }
                 divClonada.addClass('feedback-correto');
             } else {
                 exibirFeedbackModal('Errado!', 'oda/assets/img/negativo.png', 'feedback-error');
-                somErro.play();
+                if (somErro) {
+                    somErro.play().catch(error => console.error("Erro ao reproduzir o som de erro:", error));
+                }
                 setTimeout(function () {
                     divClonada.remove();
                 }, 5000);
             }
         });
     }
+    
 
 
     function exibirFeedbackModal(mensagem, icone, estiloClasse) {
@@ -278,7 +292,10 @@ function criarBodyJogo() {
 
     var $modalDialog = $('<div>', { class: 'modal-dialog' }).appendTo($modalCarrossel);
     var $modalContent = $('<div>', { class: 'modal-content' }).appendTo($modalDialog);
-    var $modalHeader = $('<div>', { class: 'modal-header centralizar' }).appendTo($modalContent);
+    var $modalHeader = $('<div>', { 
+        class: 'centralizar oda-selecao', 
+        id: 'odaModal' 
+    }).appendTo($modalContent);
 
     $('<div>', { class: 'div-categoria-modal-cabecalho' }).append(
         $('<h1>', { class: 'h1-categoria-modal-cabecalho' }),
@@ -360,8 +377,8 @@ function criarBodyJogo() {
     ).appendTo($modalFinalContent);
 
 
-    $('<audio>', { id: 'audio-acerto', src: 'oda/assets/audio/acerto.mp3' }).appendTo($bodyEncontre);
-    $('<audio>', { id: 'audio-erro', src: 'oda/assets/audio/erro.mp3' }).appendTo($bodyEncontre);
+    $('<audio>', { id: 'audio-acerto', src: 'oda/assets/audios/acerto.mp3' }).appendTo($bodyEncontre);
+    $('<audio>', { id: 'audio-erro', src: 'oda/assets/audios/erro.mp3' }).appendTo($bodyEncontre);
 
     $meio.find('.obj-jogo-encontre').append($bodyEncontre);
 

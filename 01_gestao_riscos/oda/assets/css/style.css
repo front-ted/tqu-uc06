@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth@75..125&display=swap') !important;
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth@75..125&family=Roboto+Condensed:ital,wght@0,100..900 !important;1,100..900&display=swap') !important;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth@75..125&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wdth@75..125&family=Roboto+Condensed:ital,wght@0,100..900 !important;1,100..900&display=swap');
 
 
 *,
@@ -16,7 +16,7 @@
 }
 
 .obj-jogo-encontre  .topo-intro {
-    background-color: #00498d !important !important;
+    background-color: #00498d !important;
     display: block !important;
     padding: 3% !important;
     margin: 1% !important;
@@ -416,4 +416,8 @@
 
 .obj-jogo-encontre #feedbackIcon {
     width: 50px !important;
+}
+
+#odaModal{
+    background-color: white !important;
 }
