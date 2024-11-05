@@ -105,7 +105,23 @@ blockquote {
     position: absolute;
     filter: drop-shadow(#333 3px 3px 4px);
 }
+.img-zoom1 {
+    display: table;
+    position: relative;
+    margin: 0px auto;
+    cursor: pointer;
+}
 
+.img-zoom1::after {
+    content: url('./img/bt_visualizar.png');
+    display: block;
+    width: 88px;
+    height: 88px;
+    right: -5%;
+    bottom: -7%;
+    position: absolute;
+    filter: drop-shadow(#333 3px 3px 4px);
+}
 .destaque1 {
     border-radius: 25px;
     margin: 100px 0;
