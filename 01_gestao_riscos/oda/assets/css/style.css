@@ -26,7 +26,6 @@
 
 .obj-jogo-encontre  .p-encontre {
     color: #fff !important;
-    font-weight: bold !important;
     font-size: 23px !important;
     font-family: "Fredoka", sans-serif !important;
 }
@@ -50,7 +49,6 @@
 .obj-jogo-encontre .categoria {
     font-family: "Fredoka", sans-serif !important;
     color: #00498d !important;
-    font-weight: bold !important;
 }
 
 .obj-jogo-encontre .conjunto-bts {
@@ -58,13 +56,12 @@
 }
 
 .obj-jogo-encontre .btn-carrosel {
-    font-size: 50px !important;
-    font-weight: bold !important;
+    font-size: 40px !important;
     background-color: #00498d !important;
     color: #fff !important;
     margin-bottom: 4% !important;
-    width: 79px !important;
-    height: 88px !important;
+    width: 69px !important;
+    height: 72px !important;
     border: none !important;
 }
 
@@ -119,7 +116,7 @@
 
 .obj-jogo-encontre .p-descricao {
     font-family: "Roboto Condensed", sans-serif !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
     height: 145px !important;
     padding: 2% !important;
     width: 300px !important;
@@ -180,8 +177,7 @@
 }
 
 .obj-jogo-encontre .h1-categoria-modal-cabecalho {
-    font-size: 24px !important;
-    font-weight: bold !important;
+    font-size: 23px !important;
     padding-bottom: 8px !important;
     text-transform: uppercase !important;
 }
@@ -249,7 +245,7 @@
 
 .obj-jogo-encontre .title-final {
     font-family: "Fredoka", sans-serif !important;
-    font-size: 27px !important;
+    font-size: 25px !important;
     color: #00498d !important;
 }
 
@@ -402,7 +398,7 @@
 }
 
 .obj-jogo-encontre #feedbackMessage {
-    font-size: 24px !important;
+    font-size: 23px !important;
     font-weight: bold !important;
 }
 

@@ -1,6 +1,5 @@
 $(document).ready(function () {
     criarBodyJogo();
-    // Certifique-se de que os elementos de áudio foram criados
     const somErro = $('#audio-erro')[0];
     const somAcerto = $('#audio-acerto')[0];
 
@@ -126,14 +125,13 @@ function cloneECorrecao() {
             }
     
             if (respostasLinha.includes(divClasse)) {
-                exibirFeedbackModal('Correto!', 'oda/assets/img/positivo.png', 'feedback-success');
-                // Verifique se o áudio está disponível antes de tocar
+                exibirFeedbackModal('Correto!', 'assets/img/positivo.png', 'feedback-success');
                 if (somAcerto) {
                     somAcerto.play().catch(error => console.error("Erro ao reproduzir o som de acerto:", error));
                 }
                 divClonada.addClass('feedback-correto');
             } else {
-                exibirFeedbackModal('Errado!', 'oda/assets/img/negativo.png', 'feedback-error');
+                exibirFeedbackModal('Errado!', 'assets/img/negativo.png', 'feedback-error');
                 if (somErro) {
                     somErro.play().catch(error => console.error("Erro ao reproduzir o som de erro:", error));
                 }
@@ -255,7 +253,7 @@ function criarBodyJogo() {
 
     $('<div>', { class: 'topo-img' }).append(
         $('<img>', {
-            src: 'oda/assets/img/topo_doodles.png',
+            src: 'assets/img/topo_doodles.png',
             class: 'img-fluid',
             alt: 'imagem background título encontre meu lugar'
         })
@@ -270,7 +268,7 @@ function criarBodyJogo() {
     var categorias = ['Pessoas', 'Processos', 'Tecnologia', 'Imagem', 'Eventos Externos'];
     categorias.forEach(function (categoria, index) {
         $('<div>', { class: 'linha' + (index + 1) + ' linha row' }).append(
-            $('<h3>', { class: 'categoria col-3' }).text(categoria),
+            $('<h3>', { class: 'categoria col-5' }).text(categoria),
             $('<div>', { class: 'conjunto-bts col' }).append(
                 $('<button>', {
                     type: 'button',
@@ -322,7 +320,7 @@ function criarBodyJogo() {
         var tipoClass = item.tipo.toLowerCase();
         $('<div>', { class: 'div-texto col div-texto-modal som-clique d-block ' + item.categoria }).append(
             $('<div>', { class: 'cabecalho-texto ' + tipoClass + ' row' }).append(
-                $('<img>', { src: 'oda/assets/img/' + item.icone, class: 'col-3 img-icone', alt: '' }),
+                $('<img>', { src: 'assets/img/' + item.icone, class: 'col-3 img-icone', alt: '' }),
                 $('<h3>', { class: 'h1-titulo col-9' }).text(item.tipo)
             ),
             $('<p>', { class: 'p-descricao p-descricao-' + tipoClass }).text(item.descricao)
@@ -330,11 +328,11 @@ function criarBodyJogo() {
     });
 
     $('<button>', { class: 'carrosel-controle-voltar controle', type: 'button' }).append(
-        $('<img>', { src: 'oda/assets/img/seta_esq_normal.png', class: 'estilo-seta som-clique selecionado', alt: 'seta esquerda' })
+        $('<img>', { src: 'assets/img/seta_esq_normal.png', class: 'estilo-seta som-clique selecionado', alt: 'seta esquerda' })
     ).appendTo($carrosel);
 
     $('<button>', { class: 'carrosel-controle-proximo controle', type: 'button' }).append(
-        $('<img>', { src: 'oda/assets/img/seta_dir_normal.png', class: 'estilo-seta som-clique selecionado', alt: 'seta direita' })
+        $('<img>', { src: 'assets/img/seta_dir_normal.png', class: 'estilo-seta som-clique selecionado', alt: 'seta direita' })
     ).appendTo($carrosel);
 
     $('<div>', { class: 'modal-footer' }).append(
@@ -377,8 +375,8 @@ function criarBodyJogo() {
     ).appendTo($modalFinalContent);
 
 
-    $('<audio>', { id: 'audio-acerto', src: 'oda/assets/audios/acerto.mp3' }).appendTo($bodyEncontre);
-    $('<audio>', { id: 'audio-erro', src: 'oda/assets/audios/erro.mp3' }).appendTo($bodyEncontre);
+    $('<audio>', { id: 'audio-acerto', src: 'assets/audios/acerto.mp3' }).appendTo($bodyEncontre);
+    $('<audio>', { id: 'audio-erro', src: 'assets/audios/erro.mp3' }).appendTo($bodyEncontre);
 
     $meio.find('.obj-jogo-encontre').append($bodyEncontre);
 
