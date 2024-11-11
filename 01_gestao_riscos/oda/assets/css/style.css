@@ -7,7 +7,9 @@
 ::before {
     box-sizing: inherit !important;
 }
-
+html, body {
+    background: none transparent;
+}
 .obj-jogo-encontre  .conteudo-encontre {
     text-align: center !important;
     background-color: #fff !important;
