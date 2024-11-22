@@ -659,7 +659,14 @@ blockquote {
 }
 
 
-
+.video-youtube {
+    width: 640px;
+    height: 360px;
+    border-radius: 10px;
+    margin: 40px auto;
+    display: block;
+  }
+  
 @media only screen and (max-width:1440px) {
     .elemento-direita {
         position: absolute;

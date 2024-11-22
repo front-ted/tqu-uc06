@@ -77,15 +77,15 @@ AudioPlayer = {
                 audio.pause();
             })  
 
-            seek.addEventListener('input', function(){
-                audio.stopUpdate = true;
-            })
+            // seek.addEventListener('input', function(){
+            //     audio.stopUpdate = true;
+            // })
 
-            seek.addEventListener('change', function(){
-                console.log('change to:', this.value)
-                audio.currentTime = parseFloat(this.value);  
-                audio.stopUpdate = false;             
-            })
+            // seek.addEventListener('change', function(){
+            //     console.log('change to:', this.value)
+            //     audio.currentTime = parseFloat(this.value);  
+            //     audio.stopUpdate = false;             
+            // })
 
             audio.addEventListener('timeupdate', function(){
                 this.updateSeek();
